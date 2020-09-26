@@ -1,0 +1,61 @@
+.my_border{
+	border-radius: 50%;
+	border: 2px solid #999;
+	width: 24px;height: 24px;
+	text-align: center;/* 控制文本水平位置 */
+	line-height: 1;  /* 控制文本垂直位置*/
+	margin: 0 auto;
+}
+.my_border2{
+	width: 5px;height: 5px;
+	border: 1px solid #999;
+	border-radius: 50%;
+	background-color: #999;
+}
+.my_border3{
+	width: 400px;height: 54px;
+	border: 1px solid #000000;
+}
+.my_input{
+	width: 290px;height: 52px;
+	border: 1px solid #000000;
+	border-top-right-radius: .25rem;
+	border-bottom-right-radius: .25rem;
+	outline: 0px;
+}
+ .font_small{
+	 font-size: 0.8rem;
+ }
+.my_div{
+	width:400px ;
+}
+.my1{
+	margin: 0 auto;
+}
+.btn1{
+	width: 106.19px;height: 52px;
+	border: 1px solid #000000;
+	background-color: white;
+	border-right: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.my_height{
+	line-height: 40px;
+}
+.bord1{
+	border: 2px solid #000000;
+}
+.my_word{font-size: 24px;}
+
+.my_input2{border: 0;outline:0;}
+input:link {outline:0px;}	
+input:visited {outline:0px;}	
+input:hover {outline:0px;}	
+input:active {outline:0px;}
+
+.my_input3{
+	width: 400px;height: 52px;
+	border: 1px solid #000000;
+	border-radius: 0.25rem;
+	}
