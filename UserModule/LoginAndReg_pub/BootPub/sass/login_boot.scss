@@ -1,0 +1,42 @@
+// 创建变量
+$main_color: #790603;
+$font_weight: bold;
+$bg_color: #e9ecef;
+
+// 使用变量
+.breadcrumb-item + .breadcrumb-item::before{
+	content: "|";
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+.breadcrumb-item{
+	color: $main_color;
+}
+.breadcrumb{
+	margin-bottom: 0;
+}
+	// header
+	.header{
+		font-weight: $font_weight;
+	}
+	 // footer
+	.container div{
+		background-color: $bg_color;
+		text-align: center;
+		font-size: .75rem;
+	}
+	.footer{
+		justify-content: center;
+	}
+	.container div p{
+		opacity: .3;
+		padding-bottom: 1rem;
+	}
+	.footer a{
+		text-decoration: none;
+		color: #000000;
+	}
+	.footer a:hover{
+		text-decoration: underline;
+	}
+	 
