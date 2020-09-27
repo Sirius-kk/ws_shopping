@@ -4,39 +4,55 @@ $font_weight: bold;
 $bg_color: #e9ecef;
 
 // 使用变量
-.breadcrumb-item + .breadcrumb-item::before{
-	content: "|";
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-}
-.breadcrumb-item{
-	color: $main_color;
-}
-.breadcrumb{
-	margin-bottom: 0;
-}
-	// header
-	.header{
+.container{
+	.header{// header
+		// height: ;width: ;
+		margin-bottom: 0;
 		font-weight: $font_weight;
+		.breadcrumb-item + .breadcrumb-item::before{
+			content: "|";
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+		.breadcrumb-item{
+			color: $main_color;
+			img{
+				width: 240px;
+			}
+		}
 	}
-	 // footer
-	.container div{
+	// footer
+	div{
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		height: 150px;
 		background-color: $bg_color;
 		text-align: center;
 		font-size: .75rem;
-	}
-	.footer{
-		justify-content: center;
-	}
-	.container div p{
-		opacity: .3;
-		padding-bottom: 1rem;
-	}
-	.footer a{
-		text-decoration: none;
-		color: #000000;
-	}
-	.footer a:hover{
-		text-decoration: underline;
-	}
+		&::before{/* before和after是在元素内部最前边或者最后边插入元素。display:table解决上边距缺失;display:block解决高度坍塌 */
+			content: "";
+			display: table;
+		}
+		.footer{
+			margin-top: 18px;
+			justify-content: center;
+			a{
+				text-decoration: none;
+				color: #000000;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		p{
+			opacity: .3;
+			padding-bottom: 1rem;
+		}
+	 }
+}
+
+
+
+
+	
 	 
