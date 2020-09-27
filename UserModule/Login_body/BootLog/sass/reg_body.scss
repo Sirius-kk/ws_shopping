@@ -1,0 +1,78 @@
+// 创建变量
+$big_font: 20px;
+$samll_font: 12px;
+$font_color: #191919;
+// 使用变量
+.reg_body{
+	height: 400px;
+	.body_account_header{
+		width: 350px;height: 55px;
+		margin-top: 20px;
+		background-color: #f8f9fa;
+		margin-bottom: 0;
+		li + li::before{
+			content: "|";
+			opacity: .3;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		a{
+			font-size: $big_font;
+			color: $font_color;
+			&:visited{
+				color: #e4393c;
+				font-weight: bolder;
+			}
+			&:hover{
+				color: #e4393c;
+				font-weight: bold;
+			}
+		}
+		.hr1{
+			margin-top: 0;
+		   margin-bottom: 26px;
+		   border: 2px;
+		}
+	 }
+	 .body_account{
+		.body_play{height: 250px;}
+		.body_account_input{
+			width: 265px;
+			margin: 0 auto;
+			.input_t,.input_b{
+				box-shadow: 0 0 0 0 #000000;
+				font-size: 14px;
+				padding-left: 16px;
+				width: 260px;
+				margin: 0 auto;
+			}
+			.input_t{
+				margin-top: 15px;
+				margin-bottom: 20px;
+			}
+		}
+		.btn{
+			width: 265px;
+			height: 36px;
+			box-shadow: 0 0 0 0 #000000;
+			margin-top: 20px;
+			margin-bottom: 5px;
+			font-size: 14px;
+			font-weight: bold;
+			background-color: #CA141D;
+			border: 0;
+		}
+		#code_reg{
+			display: none;
+		}
+		.body_account_tip{
+			background-color: #f8f9fa;
+			li+li::before{
+				content: "|";
+				padding-bottom: 5px;
+			}
+			li a{font-size: .8rem;}
+		}
+	}
+}
+

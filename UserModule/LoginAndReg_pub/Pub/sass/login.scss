@@ -1,0 +1,62 @@
+// 创建变量
+$main_color:#790603;
+$font_weight: bold;
+$font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+
+ // 使用变量
+*{
+	margin: 0;
+	padding: 0;
+ }
+.content{
+	list-style: none;
+	background-color: #e9ecef;
+	font-family: $font_family;
+	text-align: center;
+}
+// header
+	.header{
+		display: flex;
+		font-weight: $font_weight;
+		padding: .75rem 1rem;
+		padding-left: 300px;
+		li{
+			color: $main_color;
+		}
+		li:nth-child(2)::before{
+			content: "|";
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		li+li{
+			margin-top: 4px;
+		}
+	}
+// footer
+	.footer{
+		font-size: .75rem;
+		ul{
+			display: flex;
+			padding: 12.75px 17px;
+			list-style: none;
+			justify-content: center;
+			a{
+				text-decoration: none;
+				color: #000;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+			li+li::before{
+				content: "|";
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
+		}
+		p{
+			padding-bottom: 1rem;
+			opacity: .3;
+		}
+	}
+	
+	
