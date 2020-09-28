@@ -1,5 +1,5 @@
 .reg_body {
-  height: 400px; }
+  height: 440px; }
   .reg_body .body_account_header {
     width: 350px;
     height: 55px;
@@ -20,42 +20,38 @@
       .reg_body .body_account_header a:hover {
         color: #e4393c;
         font-weight: bold; }
-    .reg_body .body_account_header .hr1 {
-      margin-top: 0;
-      margin-bottom: 26px;
-      border: 2px; }
-  .reg_body .body_account .body_play {
-    height: 250px; }
-  .reg_body .body_account .body_account_input {
-    width: 265px;
-    margin: 0 auto; }
-    .reg_body .body_account .body_account_input .input_t, .reg_body .body_account .body_account_input .input_b {
-      box-shadow: 0 0 0 0 #000000;
-      font-size: 14px;
-      padding-left: 16px;
+  .reg_body .body_play {
+    height: 200px; }
+    .reg_body .body_play .body_account_input {
       width: 260px;
       margin: 0 auto; }
-    .reg_body .body_account .body_account_input .input_t {
-      margin-top: 15px;
-      margin-bottom: 20px; }
-  .reg_body .body_account .btn {
-    width: 265px;
-    height: 36px;
-    box-shadow: 0 0 0 0 #000000;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: #CA141D;
-    border: 0; }
-  .reg_body .body_account #code_reg {
-    display: none; }
-  .reg_body .body_account .body_account_tip {
+      .reg_body .body_play .body_account_input .input_t, .reg_body .body_play .body_account_input .input_b {
+        box-shadow: 0 0 0 0 #000000;
+        font-size: 14px;
+        padding-left: 16px;
+        width: 260px;
+        margin: 0 auto; }
+      .reg_body .body_play .body_account_input .input_t {
+        margin-top: 15px;
+        margin-bottom: 20px; }
+    .reg_body .body_play .btn {
+      width: 265px;
+      height: 36px;
+      box-shadow: 0 0 0 0 #000000;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #CA141D;
+      border: 0; }
+    .reg_body .body_play #code_reg {
+      display: none; }
+  .reg_body .body_account_tip {
     background-color: #f8f9fa; }
-    .reg_body .body_account .body_account_tip li + li::before {
+    .reg_body .body_account_tip li + li::before {
       content: "|";
       padding-bottom: 5px; }
-    .reg_body .body_account .body_account_tip li a {
+    .reg_body .body_account_tip li a {
       font-size: .8rem; }
 
 /*# sourceMappingURL=reg_body.css.map */

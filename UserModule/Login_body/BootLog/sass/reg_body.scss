@@ -4,7 +4,7 @@ $samll_font: 12px;
 $font_color: #191919;
 // 使用变量
 .reg_body{
-	height: 400px;
+	height: 440px;
 	.body_account_header{
 		width: 350px;height: 55px;
 		margin-top: 20px;
@@ -29,15 +29,10 @@ $font_color: #191919;
 			}
 		}
 	}
-	.hr1{
-		margin-top: 0;
-		margin-bottom: 26px;
-		border: 2px;
-	}
-	 .body_account{
-		.body_play{height: 250px;}
+	.body_play{
+		height: 200px;
 		.body_account_input{
-			width: 265px;
+			width: 260px;
 			margin: 0 auto;
 			.input_t,.input_b{
 				box-shadow: 0 0 0 0 #000000;
@@ -65,14 +60,14 @@ $font_color: #191919;
 		#code_reg{
 			display: none;
 		}
-		.body_account_tip{
-			background-color: #f8f9fa;
-			li+li::before{
-				content: "|";
-				padding-bottom: 5px;
-			}
-			li a{font-size: .8rem;}
+	}
+	.body_account_tip{
+		background-color: #f8f9fa;
+		li+li::before{
+			content: "|";
+			padding-bottom: 5px;
 		}
+		li a{font-size: .8rem;}
 	}
 }
 
