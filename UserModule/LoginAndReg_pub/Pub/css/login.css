@@ -3,18 +3,22 @@
   padding: 0; }
 
 .content {
-  list-style: none;
   background-color: #e9ecef;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: center; }
 
 .header {
+  list-style: none;
   display: flex;
+  align-items: center;
   font-weight: bold;
   padding: .75rem 1rem;
   padding-left: 300px; }
   .header li {
-    color: #790603; }
+    color: #790603;
+    font-size: 1.25rem; }
+    .header li img {
+      width: 240px; }
   .header li:nth-child(2)::before {
     content: "|";
     padding-left: 25px;
