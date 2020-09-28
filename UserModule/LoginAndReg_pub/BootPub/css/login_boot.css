@@ -1,7 +1,9 @@
 @charset "UTF-8";
 .container .header {
   margin-bottom: 0;
-  font-weight: bold; }
+  font-weight: bold !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.25rem; }
   .container .header .breadcrumb-item + .breadcrumb-item::before {
     content: "|";
     padding-left: 1.5rem;
