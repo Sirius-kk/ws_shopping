@@ -1,5 +1,7 @@
 .reg_body {
   height: 440px; }
+  .reg_body ul {
+    background-color: #fff !important; }
   .reg_body .body_account_header {
     width: 350px;
     height: 55px;
@@ -46,12 +48,21 @@
       border: 0; }
     .reg_body .body_play #code_reg {
       display: none;
-      padding-top: 35px;
+      padding-top: 26px;
       position: relative; }
       .reg_body .body_play #code_reg .phone {
         position: absolute;
-        right: -10px;
-        top: 10px; }
+        right: 5px;
+        top: 10px;
+        z-index: -1;
+        opacity: 0; }
+      .reg_body .body_play #code_reg .ewm {
+        transition: transform .5s; }
+      .reg_body .body_play #code_reg:hover .ewm {
+        transform: translate(-70px); }
+      .reg_body .body_play #code_reg:hover .phone {
+        opacity: 1;
+        transition: opacity 1s .2s ease-in-out; }
   .reg_body .body_account_tip {
     background-color: #f8f9fa; }
     .reg_body .body_account_tip li + li::before {

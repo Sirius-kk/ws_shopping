@@ -5,6 +5,7 @@ $font_color: #191919;
 // 使用变量
 .reg_body{
 	height: 440px;
+	ul{background-color: #fff !important;}
 	.body_account_header{
 		width: 350px;height: 55px;
 		margin-top: 20px;
@@ -29,6 +30,7 @@ $font_color: #191919;
 			}
 		}
 	}
+	// .hr1{size: 5px;}
 	.body_play{
 		height: 200px;
 		.body_account_input{
@@ -59,13 +61,34 @@ $font_color: #191919;
 		}
 		#code_reg{
 			display: none;
-			padding-top: 35px;
+			padding-top: 26px;
 			position: relative;
+			// .ewm{
+			// 	&:hover{
+			// 		transform: translate(-65px);
+			// 	}
+			// 	transition: transform .6s;
+			// }
 			.phone{
 				position: absolute;
-				right: -10px;
+				right: 5px;
 				top: 10px;
+				z-index: -1;
+				opacity: 0;
 			}
+			.ewm{
+				transition: transform .5s;
+			}
+			&:hover{
+				.ewm{
+					transform: translate(-70px);
+				}
+				.phone{
+					opacity: 1;
+					transition: opacity 1s .2s ease-in-out;
+				}
+			}
+			
 		}
 	}
 	.body_account_tip{
