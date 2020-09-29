@@ -45,7 +45,13 @@
       background-color: #CA141D;
       border: 0; }
     .reg_body .body_play #code_reg {
-      display: none; }
+      display: none;
+      padding-top: 35px;
+      position: relative; }
+      .reg_body .body_play #code_reg .phone {
+        position: absolute;
+        right: -10px;
+        top: 10px; }
   .reg_body .body_account_tip {
     background-color: #f8f9fa; }
     .reg_body .body_account_tip li + li::before {

@@ -59,6 +59,13 @@ $font_color: #191919;
 		}
 		#code_reg{
 			display: none;
+			padding-top: 35px;
+			position: relative;
+			.phone{
+				position: absolute;
+				right: -10px;
+				top: 10px;
+			}
 		}
 	}
 	.body_account_tip{
