@@ -2,6 +2,8 @@
   height: 440px; }
   .reg_body ul {
     background-color: #fff !important; }
+  .reg_body .hr1 {
+    margin-bottom: 20px; }
   .reg_body .body_account_header {
     width: 350px;
     height: 55px;
@@ -34,8 +36,8 @@
         width: 260px;
         margin: 0 auto; }
       .reg_body .body_play .body_account_input .input_t {
-        margin-top: 15px;
-        margin-bottom: 20px; }
+        margin-top: 25px;
+        margin-bottom: 15px; }
     .reg_body .body_play .btn {
       width: 265px;
       height: 36px;
@@ -48,7 +50,7 @@
       border: 0; }
     .reg_body .body_play #code_reg {
       display: none;
-      padding-top: 26px;
+      padding-top: 30px;
       position: relative; }
       .reg_body .body_play #code_reg .phone {
         position: absolute;

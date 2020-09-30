@@ -6,6 +6,7 @@ $font_color: #191919;
 .reg_body{
 	height: 440px;
 	ul{background-color: #fff !important;}
+	.hr1{margin-bottom: 20px;}
 	.body_account_header{
 		width: 350px;height: 55px;
 		margin-top: 20px;
@@ -44,8 +45,8 @@ $font_color: #191919;
 				margin: 0 auto;
 			}
 			.input_t{
-				margin-top: 15px;
-				margin-bottom: 20px;
+				margin-top: 25px;
+				margin-bottom: 15px;
 			}
 		}
 		.btn{
@@ -61,7 +62,7 @@ $font_color: #191919;
 		}
 		#code_reg{
 			display: none;
-			padding-top: 26px;
+			padding-top: 30px;
 			position: relative;
 			// .ewm{
 			// 	&:hover{
