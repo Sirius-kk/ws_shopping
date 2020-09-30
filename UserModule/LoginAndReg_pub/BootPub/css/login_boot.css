@@ -1,38 +1,43 @@
 @charset "UTF-8";
-.container .header {
-  margin-bottom: 0;
-  font-weight: bold !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1.25rem; }
-  .container .header .breadcrumb-item + .breadcrumb-item::before {
-    content: "|";
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; }
-  .container .header .breadcrumb-item {
-    color: #790603; }
-    .container .header .breadcrumb-item img {
-      width: 240px; }
-.container div {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  height: 150px;
-  background-color: #e9ecef;
-  text-align: center;
-  font-size: .75rem; }
-  .container div::before {
-    /* before和after是在元素内部最前边或者最后边插入元素。display:table解决上边距缺失;display:block解决高度坍塌 */
-    content: "";
-    display: table; }
-  .container div .footer {
-    margin-top: 18px;
-    justify-content: center; }
-    .container div .footer a {
-      text-decoration: none;
-      color: #000000; }
-      .container div .footer a:hover {
-        text-decoration: underline; }
-  .container div p {
-    opacity: .3;
-    padding-bottom: 1rem; }
+.container-fluid {
+  margin: 0 auto; }
+  .container-fluid .header {
+    height: 120px;
+    margin-bottom: 0;
+    font-weight: bold !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.25rem; }
+    .container-fluid .header .breadcrumb-item + .breadcrumb-item::before {
+      content: "|";
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+    .container-fluid .header .breadcrumb-item {
+      color: #790603; }
+      .container-fluid .header .breadcrumb-item img {
+        width: 240px; }
+  .container-fluid div {
+    height: 150px;
+    width: 1110px;
+    margin: 0 auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #e9ecef;
+    text-align: center;
+    font-size: .75rem; }
+    .container-fluid div::before {
+      /* before和after是在元素内部最前边或者最后边插入元素。display:table解决上边距缺失;display:block解决高度坍塌 */
+      content: "";
+      display: table; }
+    .container-fluid div .footer {
+      margin-top: 18px;
+      justify-content: center; }
+      .container-fluid div .footer a {
+        text-decoration: none;
+        color: #000000; }
+        .container-fluid div .footer a:hover {
+          text-decoration: underline; }
+    .container-fluid div p {
+      opacity: .3;
+      padding-bottom: 1rem; }
 
 /*# sourceMappingURL=login_boot.css.map */

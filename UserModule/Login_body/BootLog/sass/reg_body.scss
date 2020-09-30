@@ -3,6 +3,8 @@ $big_font: 20px;
 $samll_font: 12px;
 $font_color: #191919;
 // 使用变量
+iframe{border: 0;}
+#head iframe{height: 130px;}
 .reg_body{
 	height: 440px;
 	ul{background-color: #fff !important;}
