@@ -1,0 +1,35 @@
+/* 首页轮播图在页面水平居中 */
+.page_carousel{
+	width: 1920px;
+	margin: 0 auto;
+}
+/* 重写轮播指示器的样式 */
+.carousel-indicators{
+	bottom: 30px;
+}
+.carousel-indicators li{
+	width: 40px;
+	height: 5px;
+	background-color: rgba(58, 58, 58, 0.5);
+}
+/* 第1个轮播指示器的背景颜色 */
+.carousel-indicators .active{
+	background-color: #ca151d;
+}
+
+/* 重写左右切换箭头的样式 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+	width: 70px;
+	height: 70px;
+	top: 40%;
+	background-color: transparent;
+}
+
+/* 更改左右切换箭头的图标样式 */
+.carousel-control-prev-icon{
+	background-image: url(../images/icons/arrow-left-circle-fill.svg);
+}
+.carousel-control-next-icon{
+	background-image: url(../images/icons/arrow-right-circle-fill.svg);
+}

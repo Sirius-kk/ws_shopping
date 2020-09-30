@@ -1,0 +1,49 @@
+/* 设置LOGO尺寸 */
+.logo_icon{width: 200px;}
+
+/* 设置搜索输入框样式 */
+.my_input{
+	font-size: 12px;
+	border-radius: 16px;
+	height: 32px;
+	position: relative;
+	
+}
+.my_input:focus{
+	box-shadow: 0 0 0 0;
+	border: 1px solid #ca151d;
+}
+
+/* 设置搜索按钮样式 */
+.search_icon{
+	position: absolute;
+	right: 0px;
+}
+/* 设置登录注册等功能样式 */
+.breadcrumb{
+	padding: 0;
+	margin-bottom: 0;
+	background-color:transparent;
+	font-size: 14px;
+}
+.breadcrumb-item + .breadcrumb-item::before{content: "|";}
+/* 重置a标签链接字体颜色样式 */
+.breadcrumb-item a{
+	color: #333;
+}
+/* 设置我的收藏及添加购物车数量样式 */
+.wish_num,.cart_num{
+	font-size: 12px;
+	color: #ca151d;
+}
+/* 我的收藏下拉菜单 */
+/* 下拉菜单在鼠标悬停之前，隐藏状态 */
+.dropdown-menu{
+	/* display: none; */
+	font-size: 12px;
+	text-align: center;
+}
+.dropdown:hover .dropdown-menu{
+	display: block;
+	
+}
