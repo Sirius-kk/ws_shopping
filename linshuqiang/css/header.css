@@ -6,6 +6,7 @@
 	font-size: 12px;
 	border-radius: 16px;
 	height: 32px;
+	background-color: rgba(243,243,243,0.6);
 	position: relative;
 	
 }
@@ -24,7 +25,7 @@
 	padding: 0;
 	margin-bottom: 0;
 	background-color:transparent;
-	font-size: 14px;
+	font-size: 12px;
 }
 .breadcrumb-item + .breadcrumb-item::before{content: "|";}
 /* 重置a标签链接字体颜色样式 */
@@ -39,7 +40,7 @@
 /* 我的收藏下拉菜单 */
 /* 下拉菜单在鼠标悬停之前，隐藏状态 */
 .dropdown-menu{
-	/* display: none; */
+	display: none;
 	font-size: 12px;
 	text-align: center;
 }

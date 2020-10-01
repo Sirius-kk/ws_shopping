@@ -1,0 +1,39 @@
+/* 清除页面所有内外边距 */
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 统一设置页面字体样式 */
+body{
+	font-size: 14px;
+	color: #3A3A3A;
+	font-family: "microsoft yahei";
+	background-color: rgba(243,243,243,0.6);
+}
+/* 设置引入的页面头部样式 */
+.page_header{
+	width: 100%;
+	background-color: #fff;
+}
+/* 设置页面头部媒体查询 */
+@media (min-width:576px) {
+	.page_header{
+		height: 150px;
+	}
+	
+}
+@media (min-width:768px) {
+	.page_header{
+		height: 150px;
+	}
+}
+@media (min-width:992px) {
+	.page_header{
+		height: 150px;
+	}
+}
+@media (min-width:1009px) {
+	.page_header{
+		height: 93px;
+	}
+}

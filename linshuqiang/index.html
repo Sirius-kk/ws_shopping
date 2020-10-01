@@ -1,0 +1,636 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/carousel.css">
+	</head>
+	<body>
+		<!-- 页面头部 -->
+		<header>
+			<iframe class="page_header" src="header.html" scrolling="no" frameborder="0"></iframe>
+		</header>
+		<!-- 首页轮播图 -->
+		<div class="container-fluid p-0 bg-transparent">
+			<div class="page_carousel">
+				<div id="carousel_pic" class="carousel" data-ride="carousel">
+					<!-- 1.轮播图片 -->
+					<div class="carousel-inner">
+						<!-- 第1张图片 -->
+						<div class="carousel-item active">
+							<a href="#">
+								<img class="w-100" src="images/products/carousel-pic/huawei.png">
+							</a>
+						</div>
+						<!-- 第2张图片 -->
+						<div class="carousel-item">
+							<a href="#">
+								<img class="w-100" src="images/products/carousel-pic/xiaomi.png">
+							</a>
+						</div>
+						<!-- 第3张图片 -->
+						<div class="carousel-item">
+							<a href="#">
+								<img class="w-100" src="images/products/carousel-pic/charge-4(1).jpg">
+							</a>
+						</div>
+						<!-- 第4张图片 -->
+						<div class="carousel-item">
+							<a href="#">
+								<img class="w-100" src="images/products/carousel-pic/dido-Y3.png">
+							</a>
+						</div>
+						<!-- 2.轮播指示器 -->
+						<div class="carousel-indicators">
+							<!-- 第1个指示器 -->
+							<li data-target="#carousel_pic" data-slide-to="0" class="active slide_icon"></li>
+							<!-- 第2个指示器 -->
+							<li data-target="#carousel_pic" data-slide-to="1" class="slide_icon"></li>
+							<!-- 第3个指示器 -->
+							<li data-target="#carousel_pic" data-slide-to="2" class="slide_icon"></li>
+							<!-- 第4个指示器 -->
+							<li data-target="#carousel_pic" data-slide-to="3" class="slide_icon"></li>
+						</div>
+						<!-- 3.左右切换箭头 -->
+						<!-- 左切换箭头 -->
+						<a data-target="#carousel_pic" data-slide="prev" class="carousel-control-prev" href="#">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<!-- 右切换箭头 -->
+						<a data-target="#carousel_pic" data-slide="next" class="carousel-control-next" href="#">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 页面导航栏菜单 -->
+		<div class="container-fluid">
+			<div class="container">
+				<div class="navbar navbar-dark navbar-expand-lg">
+					<!-- 1.最左边，永远显示的菜单项-->
+					<a class="navbar-brand m-0" href="#">全部商品
+						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-filter" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						  <path fill-rule="evenodd" d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+						</svg>
+					</a>
+				  <!-- 2.lg以下显示，lg以上隐藏按钮 -->
+					<button data-toggle="collapse" data-target="#d1" class="navbar-toggler">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				  <!-- 3.隐藏的菜单 -->
+					<div id="d1" class="collapse navbar-collapse justify-content-around">
+						<!-- 导航栏菜单项列表 -->
+						<ul class="navbar-nav">
+							<!-- 首页li -->
+							<li class="nav-item pr-4">
+								<a class="nav-link" href="#">首页
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+									</svg>
+								</a>
+							</li>
+							<!-- 华为专区li -->
+							<li class="nav-item pr-4">
+								<a class="nav-link" href="#">华为手环专区
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+									</svg>
+								</a>
+							</li>
+							<!-- 小米专区li -->
+							<li class="nav-item pr-4">
+								<a class="nav-link" href="#">小米手环专区
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+									</svg>
+								</a>
+							</li>
+							<!-- dido专区li -->
+							<li class="nav-item pr-4">
+								<a class="nav-link" href="#">dido手环专区
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+									</svg>
+								</a>
+							</li>
+							<!-- Fitbit专区li -->
+							<li class="nav-item">
+								<a class="nav-link" href="#">Fitbit手环专区
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div> 
+				</div>
+			</div>
+		</div>
+		<!-- 页面主体-分楼层 -->
+		<!-- 楼层1顶部内容 -->
+		<div class="container floor1_top d-flex justify-content-center">
+			<div class="details">
+				<p class="title m-0">华为手环B6 尊享版</p>
+				<ul class="breadcrumb bg-transparent m-0 p-0">
+					<li class="breadcrumb-item">智能通话</li>
+					<li class="breadcrumb-item">3D弧面触控彩屏</li>
+					<li class="breadcrumb-item">蓝牙耳机二合一</li>
+				</ul>
+			</div>
+			<img src="images/products/huawei/800_800_9418FE4D530F761E44A6A2D8D10CD92AA8FDABA3F0BF78F1mp.png" alt="">
+		</div>
+		<!-- 楼层1主体内容 -->
+		<div class="container p-0 mt-4 pro_content">
+			<p class="p-0 h4">华为手环专区</p>
+			<!-- 产品详情展示 -->
+			<div class="row no-gutters">
+				<div class="d-flex">
+					<!-- 左侧 -->
+					<div class="pro_intr1">
+						<a href="#">
+							<img class="pro_img" src="images/products/huawei/O1CN01ODAzNa29PWu6Jlbje_!!2407018060.jpg" alt="">
+						</a>
+					</div>
+					<!-- 右侧分产品详情及价格描述 -->
+					<div class="pro_intr2 pl-2">
+						<!-- 第1列产品 -->
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环B5图片 -->
+							<img class="w-50" src="images/products/huawei/huaweiB5.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环B5 运动版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">彩屏全触控</li>
+								<li class="breadcrumb-item">智能蓝牙耳机</li>
+								<li class="breadcrumb-item">心率检测</li>
+								<li class="breadcrumb-item">科学睡眠</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">￥999.00</p>
+						</div>
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环B6图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_3E4CBDE1F2786A559FB292A742C02DB332C5BFC42F212AA4mp.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">[新品]华为手环B6 运动版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">智能通话手环</li>
+								<li class="breadcrumb-item">3D弧面触控彩屏</li>
+								<li class="breadcrumb-item">心率检测</li>
+								<li class="breadcrumb-item">科学睡眠</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥949.00 <span class="price2">￥999.00</span></p>
+						</div>
+					</div>
+					<div class="pro_intr2 pl-2">
+						<!-- 第2列 -->
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环4图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_B3BB6E70BB6747E4781F7639F465ADC6BF1702AF6FBD3657.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环4 曜石黑</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩表盘</li>
+								<li class="breadcrumb-item">USB即插即充</li>
+								<li class="breadcrumb-item">健康管理</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥199.00</span></p>
+						</div>
+						<div class="intr_details text-center">
+							<!-- 华为手环4Pro图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_BBB7503388ED568F9D04D223CC39380AF0D55AD1BF972F11.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环4Pro 樱粉金</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩表盘</li>
+								<li class="breadcrumb-item">NFC智能刷卡</li>
+								<li class="breadcrumb-item">健康管理</li>
+								<li class="breadcrumb-item">独立GPS</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥369.00 <span class="price2">￥399.00</span></p>
+						</div>
+					</div>
+					<div class="pro_intr2 pl-2">
+						<div class="intr_details mb-2 text-center">
+							<!-- 荣耀手环5图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_1562750472060.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">荣耀手环5 标准版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩大屏</li>
+								<li class="breadcrumb-item">科学睡眠监测</li>
+								<li class="breadcrumb-item">NFC和扫码支付</li>
+								<li class="breadcrumb-item">50米防水</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥189.00</span></p>
+						</div>
+						<div class="intr_details text-center">
+							<!-- 荣耀手环4图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_1564128651216mp.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">荣耀手环4 Running版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">专业跑步指导</li>
+								<li class="breadcrumb-item">超长续航</li>
+								<li class="breadcrumb-item">50米防水</li>
+								<li class="breadcrumb-item">睡眠质量监测</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥89.00 <span class="price2">￥99.00</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 楼层2顶部内容 -->
+		<div class="container floor1_top d-flex justify-content-center">
+			<div class="details">
+				<p class="title m-0">华为手环B6 尊享版</p>
+				<ul class="breadcrumb bg-transparent m-0 p-0">
+					<li class="breadcrumb-item">智能通话</li>
+					<li class="breadcrumb-item">3D弧面触控彩屏</li>
+					<li class="breadcrumb-item">蓝牙耳机二合一</li>
+				</ul>
+			</div>
+			<img src="images/products/huawei/800_800_9418FE4D530F761E44A6A2D8D10CD92AA8FDABA3F0BF78F1mp.png" alt="">
+		</div>
+		<!-- 楼层2主体内容 -->
+		<div class="container p-0 mt-4">
+			<p class="p-0 h4">小米手环专区</p>
+			<!-- 产品详情展示 -->
+			<div class="row no-gutters">
+				<div class="d-flex">
+					<!-- 左侧 -->
+					<div class="pro_intr1">
+						<a href="#">
+							<img class="pro_img" src="images/products/huawei/O1CN01ODAzNa29PWu6Jlbje_!!2407018060.jpg" alt="">
+						</a>
+					</div>
+					<!-- 右侧分产品详情及价格描述 -->
+					<div class="pro_intr2 pl-2">
+						<!-- 第1列产品 -->
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环B5图片 -->
+							<img class="w-50" src="images/products/huawei/huaweiB5.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环B5 运动版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">彩屏全触控</li>
+								<li class="breadcrumb-item">智能蓝牙耳机</li>
+								<li class="breadcrumb-item">心率检测</li>
+								<li class="breadcrumb-item">科学睡眠</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">￥999.00</p>
+						</div>
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环B6图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_3E4CBDE1F2786A559FB292A742C02DB332C5BFC42F212AA4mp.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">[新品]华为手环B6 运动版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">智能通话手环</li>
+								<li class="breadcrumb-item">3D弧面触控彩屏</li>
+								<li class="breadcrumb-item">心率检测</li>
+								<li class="breadcrumb-item">科学睡眠</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥949.00 <span class="price2">￥999.00</span></p>
+						</div>
+					</div>
+					<div class="pro_intr2 pl-2">
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环4图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_B3BB6E70BB6747E4781F7639F465ADC6BF1702AF6FBD3657.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环4 曜石黑</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩表盘</li>
+								<li class="breadcrumb-item">USB即插即充</li>
+								<li class="breadcrumb-item">健康管理</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥199.00</span></p>
+						</div>
+						<div class="intr_details text-center">
+							<!-- 华为手环4Pro图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_BBB7503388ED568F9D04D223CC39380AF0D55AD1BF972F11.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环4Pro 樱粉金</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩表盘</li>
+								<li class="breadcrumb-item">NFC智能刷卡</li>
+								<li class="breadcrumb-item">健康管理</li>
+								<li class="breadcrumb-item">独立GPS</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥369.00 <span class="price2">￥399.00</span></p>
+						</div>
+					</div>
+					<div class="pro_intr2 pl-2">
+						<div class="intr_details mb-2 text-center">
+							<!-- 荣耀手环5图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_1562750472060.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">荣耀手环5 标准版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩大屏</li>
+								<li class="breadcrumb-item">科学睡眠监测</li>
+								<li class="breadcrumb-item">NFC和扫码支付</li>
+								<li class="breadcrumb-item">50米防水</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥189.00</span></p>
+						</div>
+						<div class="intr_details text-center">
+							<!-- 荣耀手环4图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_1564128651216mp.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">荣耀手环4 Running版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">专业跑步指导</li>
+								<li class="breadcrumb-item">超长续航</li>
+								<li class="breadcrumb-item">50米防水</li>
+								<li class="breadcrumb-item">睡眠质量监测</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥89.00 <span class="price2">￥99.00</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 楼层3顶部内容 -->
+		<div class="container floor1_top d-flex justify-content-center">
+			<div class="details">
+				<p class="title m-0">华为手环B6 尊享版</p>
+				<ul class="breadcrumb bg-transparent m-0 p-0">
+					<li class="breadcrumb-item">智能通话</li>
+					<li class="breadcrumb-item">3D弧面触控彩屏</li>
+					<li class="breadcrumb-item">蓝牙耳机二合一</li>
+				</ul>
+			</div>
+			<img src="images/products/huawei/800_800_9418FE4D530F761E44A6A2D8D10CD92AA8FDABA3F0BF78F1mp.png" alt="">
+		</div>
+		<!-- 楼层3主体内容 -->
+		<div class="container p-0 mt-4">
+			<p class="p-0 h4">dido手环专区</p>
+			<!-- 产品详情展示 -->
+			<div class="row no-gutters">
+				<div class="d-flex">
+					<!-- 左侧 -->
+					<div class="pro_intr1">
+						<a href="#">
+							<img class="pro_img" src="images/products/huawei/O1CN01ODAzNa29PWu6Jlbje_!!2407018060.jpg" alt="">
+						</a>
+					</div>
+					<!-- 右侧分产品详情及价格描述 -->
+					<div class="pro_intr2 pl-2">
+						<!-- 第1列产品 -->
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环B5图片 -->
+							<img class="w-50" src="images/products/huawei/huaweiB5.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环B5 运动版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">彩屏全触控</li>
+								<li class="breadcrumb-item">智能蓝牙耳机</li>
+								<li class="breadcrumb-item">心率检测</li>
+								<li class="breadcrumb-item">科学睡眠</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">￥999.00</p>
+						</div>
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环B6图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_3E4CBDE1F2786A559FB292A742C02DB332C5BFC42F212AA4mp.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">[新品]华为手环B6 运动版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">智能通话手环</li>
+								<li class="breadcrumb-item">3D弧面触控彩屏</li>
+								<li class="breadcrumb-item">心率检测</li>
+								<li class="breadcrumb-item">科学睡眠</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥949.00 <span class="price2">￥999.00</span></p>
+						</div>
+					</div>
+					<div class="pro_intr2 pl-2">
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环4图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_B3BB6E70BB6747E4781F7639F465ADC6BF1702AF6FBD3657.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环4 曜石黑</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩表盘</li>
+								<li class="breadcrumb-item">USB即插即充</li>
+								<li class="breadcrumb-item">健康管理</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥199.00</span></p>
+						</div>
+						<div class="intr_details text-center">
+							<!-- 华为手环4Pro图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_BBB7503388ED568F9D04D223CC39380AF0D55AD1BF972F11.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环4Pro 樱粉金</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩表盘</li>
+								<li class="breadcrumb-item">NFC智能刷卡</li>
+								<li class="breadcrumb-item">健康管理</li>
+								<li class="breadcrumb-item">独立GPS</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥369.00 <span class="price2">￥399.00</span></p>
+						</div>
+					</div>
+					<div class="pro_intr2 pl-2">
+						<div class="intr_details mb-2 text-center">
+							<!-- 荣耀手环5图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_1562750472060.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">荣耀手环5 标准版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩大屏</li>
+								<li class="breadcrumb-item">科学睡眠监测</li>
+								<li class="breadcrumb-item">NFC和扫码支付</li>
+								<li class="breadcrumb-item">50米防水</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥189.00</span></p>
+						</div>
+						<div class="intr_details text-center">
+							<!-- 荣耀手环4图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_1564128651216mp.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">荣耀手环4 Running版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">专业跑步指导</li>
+								<li class="breadcrumb-item">超长续航</li>
+								<li class="breadcrumb-item">50米防水</li>
+								<li class="breadcrumb-item">睡眠质量监测</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥89.00 <span class="price2">￥99.00</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 楼层4顶部内容 -->
+		<div class="container floor1_top d-flex justify-content-center">
+			<div class="details">
+				<p class="title m-0">华为手环B6 尊享版</p>
+				<ul class="breadcrumb bg-transparent m-0 p-0">
+					<li class="breadcrumb-item">智能通话</li>
+					<li class="breadcrumb-item">3D弧面触控彩屏</li>
+					<li class="breadcrumb-item">蓝牙耳机二合一</li>
+				</ul>
+			</div>
+			<img src="images/products/huawei/800_800_9418FE4D530F761E44A6A2D8D10CD92AA8FDABA3F0BF78F1mp.png" alt="">
+		</div>
+		<!-- 楼层4主体内容 -->
+		<div class="container p-0 mt-4">
+			<p class="p-0 h4">Fitbit手环专区</p>
+			<!-- 产品详情展示 -->
+			<div class="row no-gutters">
+				<div class="d-flex">
+					<!-- 左侧 -->
+					<div class="pro_intr1">
+						<a href="#">
+							<img class="pro_img" src="images/products/huawei/O1CN01ODAzNa29PWu6Jlbje_!!2407018060.jpg" alt="">
+						</a>
+					</div>
+					<!-- 右侧分产品详情及价格描述 -->
+					<div class="pro_intr2 pl-2">
+						<!-- 第1列产品 -->
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环B5图片 -->
+							<img class="w-50" src="images/products/huawei/huaweiB5.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环B5 运动版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">彩屏全触控</li>
+								<li class="breadcrumb-item">智能蓝牙耳机</li>
+								<li class="breadcrumb-item">心率检测</li>
+								<li class="breadcrumb-item">科学睡眠</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">￥999.00</p>
+						</div>
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环B6图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_3E4CBDE1F2786A559FB292A742C02DB332C5BFC42F212AA4mp.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">[新品]华为手环B6 运动版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">智能通话手环</li>
+								<li class="breadcrumb-item">3D弧面触控彩屏</li>
+								<li class="breadcrumb-item">心率检测</li>
+								<li class="breadcrumb-item">科学睡眠</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥949.00 <span class="price2">￥999.00</span></p>
+						</div>
+					</div>
+					<div class="pro_intr2 pl-2">
+						<div class="intr_details mb-2 text-center">
+							<!-- 华为手环4图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_B3BB6E70BB6747E4781F7639F465ADC6BF1702AF6FBD3657.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环4 曜石黑</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩表盘</li>
+								<li class="breadcrumb-item">USB即插即充</li>
+								<li class="breadcrumb-item">健康管理</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥199.00</span></p>
+						</div>
+						<div class="intr_details text-center">
+							<!-- 华为手环4Pro图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_BBB7503388ED568F9D04D223CC39380AF0D55AD1BF972F11.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">华为手环4Pro 樱粉金</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩表盘</li>
+								<li class="breadcrumb-item">NFC智能刷卡</li>
+								<li class="breadcrumb-item">健康管理</li>
+								<li class="breadcrumb-item">独立GPS</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥369.00 <span class="price2">￥399.00</span></p>
+						</div>
+					</div>
+					<div class="pro_intr2 pl-2">
+						<div class="intr_details mb-2 text-center">
+							<!-- 荣耀手环5图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_1562750472060.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">荣耀手环5 标准版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">炫彩大屏</li>
+								<li class="breadcrumb-item">科学睡眠监测</li>
+								<li class="breadcrumb-item">NFC和扫码支付</li>
+								<li class="breadcrumb-item">50米防水</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥189.00</span></p>
+						</div>
+						<div class="intr_details text-center">
+							<!-- 荣耀手环4图片 -->
+							<img class="w-50" src="images/products/huawei/800_800_1564128651216mp.png" alt="">
+							<!-- 产品标题 -->
+							<p class="pro_title m-0">荣耀手环4 Running版</p>
+							<!-- 产品特点描述 -->
+							<ul class="breadcrumb bg-transparent m-0 p-0 pro_details justify-content-center">
+								<li class="breadcrumb-item">专业跑步指导</li>
+								<li class="breadcrumb-item">超长续航</li>
+								<li class="breadcrumb-item">50米防水</li>
+								<li class="breadcrumb-item">睡眠质量监测</li>
+							</ul>
+							<!-- 产品价格 -->
+							<p class="price m-0">抢购价 ￥89.00 <span class="price2">￥99.00</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

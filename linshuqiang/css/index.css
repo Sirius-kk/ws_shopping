@@ -1,0 +1,87 @@
+/* 导航栏菜单容器的背景样式 */
+.container-fluid{
+	background-color: #ca151d;
+}
+/* 设置最左侧导航栏的菜单项文本样式 */
+.navbar-brand{
+	font-size: 20px;
+	color: rgb(242,196,198,0.7)!important;
+}
+/* 设置其它菜单项文本样式 */
+a.nav-link{
+	font-size: 18px;
+}
+/* 各个菜单项鼠标悬停时，文本颜色为不透明白色 */
+.navbar-brand:hover{
+	color: rgba(255,255,255,1)!important;
+}
+a.nav-link:hover{
+	color: rgba(255,255,255,1)!important;
+}
+
+/* 楼层1顶部样式 */
+.floor1_top{
+	height: 120px;
+	margin-top: 20px;
+	background-color: rgb(233,236,239);
+}
+
+.floor1_top>img{
+	width: 100px;
+}
+/* 设置楼层1顶部的文本样式 */
+.floor1_top .details{
+	text-align: center;
+	height: 120px;
+	padding-top: 22px;
+}
+.floor1_top .details>p{
+	font-size: 36px;
+	font-weight: bold;
+	color: #666;
+}
+/* 设置li的样式 */
+.breadcrumb-item+.breadcrumb-item::before{
+	content: "|";
+}
+.breadcrumb-item{
+	color: #666;
+	text-align: center;
+}
+
+/* 设置楼层1顶部内容样式 */
+.pro_img{
+	width: 284.7px;
+	height: 500px;
+}
+
+/* 设置楼层1主体内容样式 */
+.pro_intr1,.pro_intr2{
+	width: 284.7px;
+}
+.intr_details{
+	height: 245px;
+	background-color: #fff;
+}
+/* 楼层1主体内容的文本样式 */
+.pro_title{
+	font-size: 18px;
+	color: #000;
+	margin-top: 20px!important;
+}
+.pro_details{
+	font-size: 10px;
+	margin-bottom: 10px!important;
+}
+.price{
+	font-size: 18px;
+	font-weight: bold;
+	color: #ca151d;
+}
+.price2{
+	font-size: 14px;
+	color: #666;
+	font-weight: normal;
+	text-decoration: line-through;
+}
+
