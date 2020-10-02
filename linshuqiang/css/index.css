@@ -19,23 +19,44 @@ a.nav-link:hover{
 	color: rgba(255,255,255,1)!important;
 }
 
-/* 楼层1顶部样式 */
-.floor1_top{
+/* 楼层顶部样式 */
+.floor_top,.floor_top_xm,.floor_top_dd,.floor_top_fb{
 	height: 120px;
-	margin-top: 20px;
+	margin-top: 30px;
 	background-color: rgb(233,236,239);
 }
+.floor_top_xm{
+	background-color: rgba(255,103,0,0.3);
+}
+.floor_top_dd{
+	background-color: rgba(182,201,208,0.3);
+}
+.floor_top_fb{
+	background-color: rgba(0,176,185,0.3);
+}
+.floor_top_dd>img{
+	width: 180px;
+	height: 147px;
+}
 
-.floor1_top>img{
+.floor_top_xm>img{
+	width: 200px;
+	height: 158px;
+}
+.floor_top_fb>img{
+	width: 180px;
+	height: 130px;
+}
+.floor_top>img{
 	width: 100px;
 }
-/* 设置楼层1顶部的文本样式 */
-.floor1_top .details{
+/* 设置楼层顶部的文本样式 */
+.floor_top .details,.floor_top_xm .details,.floor_top_dd .details,.floor_top_fb .details{
 	text-align: center;
 	height: 120px;
 	padding-top: 22px;
 }
-.floor1_top .details>p{
+.floor_top .details>p,.floor_top_xm .details>p,.floor_top_dd .details>p,.floor_top_fb .details>p{
 	font-size: 36px;
 	font-weight: bold;
 	color: #666;
@@ -49,39 +70,52 @@ a.nav-link:hover{
 	text-align: center;
 }
 
-/* 设置楼层1顶部内容样式 */
+/* 设置楼层顶部内容尺寸样式 */
 .pro_img{
 	width: 284.7px;
-	height: 500px;
+	height: 828px;
 }
 
-/* 设置楼层1主体内容样式 */
+/* 设置楼层主体内容尺寸样式 */
 .pro_intr1,.pro_intr2{
 	width: 284.7px;
 }
 .intr_details{
-	height: 245px;
+	height: 410px;
 	background-color: #fff;
 }
-/* 楼层1主体内容的文本样式 */
+/* 楼层主体内容的文本样式 */
 .pro_title{
-	font-size: 18px;
+	font-size: 22px;
 	color: #000;
-	margin-top: 20px!important;
+	margin-bottom: 5px!important;
 }
 .pro_details{
 	font-size: 10px;
 	margin-bottom: 10px!important;
 }
 .price{
+	border-radius: 20px;
 	font-size: 18px;
 	font-weight: bold;
 	color: #ca151d;
 }
+
 .price2{
 	font-size: 14px;
 	color: #666;
 	font-weight: normal;
 	text-decoration: line-through;
 }
-
+/* 楼层2小米专区主体内容样式设置 */
+.pro_sale .price{
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #000;
+	border-radius: 20px;
+	font-size: 18px;
+	margin-left: 78px!important;
+	font-weight: bold;
+	color: #fff;
+}
