@@ -4,12 +4,26 @@ iframe {
 #head iframe {
   height: 130px; }
 
+.container-fluid {
+  background: #ECE9E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.btn {
+  box-shadow: 0 0 0 0 #000000 !important; }
+
 .reg_body {
+  height: 120px;
   height: 440px; }
   .reg_body ul {
-    background-color: #fff !important; }
+    background-color: transparent !important; }
   .reg_body .hr1 {
     margin-bottom: 20px; }
+  .reg_body hr {
+    width: 350px; }
   .reg_body .body_account_header {
     width: 350px;
     height: 55px;
@@ -20,7 +34,8 @@ iframe {
       content: "|";
       opacity: .3;
       padding-left: 40px;
-      padding-right: 40px; }
+      padding-right: 40px;
+      flex-wrap: wrap; }
     .reg_body .body_account_header a {
       font-size: 20px;
       color: #191919; }
@@ -42,13 +57,12 @@ iframe {
         width: 260px;
         margin: 0 auto; }
       .reg_body .body_play .body_account_input .input_t {
-        margin-top: 25px;
+        margin-top: 20px;
         margin-bottom: 15px; }
     .reg_body .body_play .btn {
       width: 265px;
       height: 36px;
-      box-shadow: 0 0 0 0 #000000;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-bottom: 5px;
       font-size: 14px;
       font-weight: bold;
@@ -57,12 +71,12 @@ iframe {
     .reg_body .body_play #code_reg {
       display: none;
       padding-top: 30px;
+      margin-bottom: 18.8px;
       position: relative; }
       .reg_body .body_play #code_reg .phone {
         position: absolute;
-        right: 5px;
+        right: 10px;
         top: 10px;
-        z-index: -1;
         opacity: 0; }
       .reg_body .body_play #code_reg .ewm {
         transition: transform .5s; }

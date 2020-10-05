@@ -1,8 +1,9 @@
 @charset "UTF-8";
 .container-fluid {
+  background-color: #e9ecef;
   margin: 0 auto; }
   .container-fluid .header {
-    height: 120px;
+    height: 130px;
     margin-bottom: 0;
     font-weight: bold !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -15,7 +16,7 @@
       color: #790603; }
       .container-fluid .header .breadcrumb-item img {
         width: 240px; }
-  .container-fluid div {
+  .container-fluid div.foot {
     height: 150px;
     width: 1110px;
     margin: 0 auto;
@@ -24,19 +25,19 @@
     background-color: #e9ecef;
     text-align: center;
     font-size: .75rem; }
-    .container-fluid div::before {
+    .container-fluid div.foot::before {
       /* before和after是在元素内部最前边或者最后边插入元素。display:table解决上边距缺失;display:block解决高度坍塌 */
       content: "";
       display: table; }
-    .container-fluid div .footer {
-      margin-top: 18px;
+    .container-fluid div.foot .footer {
+      margin-top: 35px;
       justify-content: center; }
-      .container-fluid div .footer a {
+      .container-fluid div.foot .footer a {
         text-decoration: none;
         color: #000000; }
-        .container-fluid div .footer a:hover {
+        .container-fluid div.foot .footer a:hover {
           text-decoration: underline; }
-    .container-fluid div p {
+    .container-fluid div.foot p {
       opacity: .3;
       padding-bottom: 1rem; }
 

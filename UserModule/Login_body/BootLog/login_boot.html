@@ -14,44 +14,46 @@
 		<div id="head">
 			<iframe src="../../LoginAndReg_pub/BootPub/login_header_boot.html" width="100%" scrolling="no"  height=""></iframe>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="reg_body offset-lg-6 col-lg-4 justify-content-center"><!-- 目标区域 -->
-					<ul class="body_account_header breadcrumb flex-nowrap d-flex justify-content-center w-100"><!-- 两个登陆选择 -->
-						<li class="breadcrumb-item"><a href="#" onclick="code()">扫码登陆</a></li>
-						<li class="breadcrumb-item"><a href="#" onclick="account()">账号登陆</a></li>
-					</ul>
-					<hr class="hr1 mt-0" noshade>
-					<div class="body_play text-center">
-						<div class="account_play" id="account_reg"><!-- 账号登陆 -->
-							<div class="body_account_input"><!-- 用户名和密码输入框 -->
-								<input placeholder="用户名/邮箱/手机号" type="text" class="input_t form-control">
-								<input placeholder="手机号" type="text" class="input_b form-control">
-								<a class="mt-3 d-block text-lg-left text-sm-center" href="#">短信验证码登陆</a>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="reg_body offset-lg-7 col-lg-4 justify-content-center"><!-- 目标区域 -->
+						<ul class="body_account_header breadcrumb flex-nowrap d-flex justify-content-center w-100"><!-- 两个登陆选择 -->
+							<li class="breadcrumb-item"><a href="#" onclick="code()">扫码登陆</a></li>
+							<li class="breadcrumb-item"><a href="#" onclick="account()">账号登陆</a></li>
+						</ul>
+						<hr class="hr1 mt-0" noshade>
+						<div class="body_play text-center">
+							<div class="account_play" id="account_reg"><!-- 账号登陆 -->
+								<div class="body_account_input"><!-- 用户名和密码输入框 -->
+									<input placeholder="用户名/邮箱/手机号" type="text" class="input_t form-control">
+									<input placeholder="手机号" type="text" class="input_b form-control">
+									<a class="mt-4 d-block text-lg-left text-sm-center" href="#">短信验证码登陆</a>
+								</div>
+								<div><!-- 登录按钮 -->
+									<button type="button" class="btn btn-info">登陆</button>
+								</div>
 							</div>
-							<div><!-- 登录按钮 -->
-								<button type="button" class="btn btn-info">登陆</button>
+							<div id="code_reg"><!-- 扫码登陆 -->
+								<img class="ewm" src="../../../public_img/user_img/erweima.gif" >
+								<img class="phone" src="../../../public_img/user_img/phonesaoma.png" >
 							</div>
 						</div>
-						<div id="code_reg"><!-- 扫码登陆 -->
-							<img class="ewm" src="../../../public_img/user_img/erweima.gif" >
-							<img class="phone" src="../../../public_img/user_img/phonesaoma.png" >
+						<hr class="hr2 mb-0 mt-2" noshade>
+						<div>
+							<ul class="body_account_tip breadcrumb justify-content-center mb-0">
+								<li class="breadcrumb-item"><a href="">注册</a></li>
+								<li class="breadcrumb-item"><a href="">忘记密码</a></li>
+								<li class="breadcrumb-item"><a href="">遇见问题</a></li>
+							</ul>
 						</div>
-					</div>
-					<hr class="hr2 mb-0 mt-2" noshade>
-					<div>
-						<ul class="body_account_tip breadcrumb justify-content-center mb-0">
-							<li class="breadcrumb-item"><a href="">注册</a></li>
-							<li class="breadcrumb-item"><a href="">忘记密码</a></li>
-							<li class="breadcrumb-item"><a href="">遇见问题</a></li>
-						</ul>
-					</div>
-					<div><!-- 图标登陆 -->
-						<ul class="nav justify-content-center">
-							<li class="nav-link"><a href=""><img src="../../../public_img/user_img/qq.ico"></a></li>
-							<li class="nav-link"><a href=""><img src="../../../public_img/user_img/weixin.ico"></a></li>
-							<li class="nav-link"><a href=""><img src="../../../public_img/user_img/zfb.ico"></a></li>
-						</ul>
+						<div><!-- 图标登陆 -->
+							<ul class="nav justify-content-center">
+								<li class="nav-link"><a href=""><img src="../../../public_img/user_img/qq.png"></a></li>
+								<li class="nav-link"><a href=""><img src="../../../public_img/user_img/wx.png"></a></li>
+								<li class="nav-link"><a href=""><img src="../../../public_img/user_img/zfb.png"></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

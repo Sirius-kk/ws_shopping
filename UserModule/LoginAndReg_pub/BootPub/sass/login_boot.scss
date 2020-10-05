@@ -6,9 +6,10 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 
 // 使用变量
 .container-fluid{
+	background-color: #e9ecef;
 	margin: 0 auto;
 	.header{// header
-		height: 120px;
+		height: 130px;
 		margin-bottom: 0;
 		font-weight: $font_weight !important;
 		font-family: $font_family;
@@ -26,7 +27,7 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 		}
 	}
 	// footer
-	div{
+	div.foot{
 		height: 150px;width: 1110px;
 		margin: 0 auto;
 		border-bottom-left-radius: 8px;
@@ -39,7 +40,7 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 			display: table;
 		}
 		.footer{
-			margin-top: 18px;
+			margin-top: 35px;
 			justify-content: center;
 			a{
 				text-decoration: none;

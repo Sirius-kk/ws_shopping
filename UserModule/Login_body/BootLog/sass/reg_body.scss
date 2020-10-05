@@ -4,11 +4,22 @@ $samll_font: 12px;
 $font_color: #191919;
 // 使用变量
 iframe{border: 0;}
-#head iframe{height: 130px;}
+#head {
+	// background-color: #e9ecef;
+	iframe{height: 130px;}
+}
+.container-fluid{
+	background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn{box-shadow: 0 0 0 0 #000000 !important;}
 .reg_body{
+	height: 120px;
 	height: 440px;
-	ul{background-color: #fff !important;}
+	ul{background-color: transparent !important;}
 	.hr1{margin-bottom: 20px;}
+	hr{width: 350px;}
 	.body_account_header{
 		width: 350px;height: 55px;
 		margin-top: 20px;
@@ -19,6 +30,7 @@ iframe{border: 0;}
 			opacity: .3;
 			padding-left: 40px;
 			padding-right: 40px;
+			flex-wrap: wrap;
 		}
 		a{
 			font-size: $big_font;
@@ -47,15 +59,15 @@ iframe{border: 0;}
 				margin: 0 auto;
 			}
 			.input_t{
-				margin-top: 25px;
+				margin-top: 20px;
 				margin-bottom: 15px;
 			}
 		}
 		.btn{
 			width: 265px;
 			height: 36px;
-			box-shadow: 0 0 0 0 #000000;
-			margin-top: 20px;
+			
+			margin-top: 10px;
 			margin-bottom: 5px;
 			font-size: 14px;
 			font-weight: bold;
@@ -65,6 +77,7 @@ iframe{border: 0;}
 		#code_reg{
 			display: none;
 			padding-top: 30px;
+			margin-bottom: 18.8px;
 			position: relative;
 			// .ewm{
 			// 	&:hover{
@@ -74,9 +87,8 @@ iframe{border: 0;}
 			// }
 			.phone{
 				position: absolute;
-				right: 5px;
+				right: 10px;
 				top: 10px;
-				z-index: -1;
 				opacity: 0;
 			}
 			.ewm{
