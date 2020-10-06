@@ -71,7 +71,7 @@
 			</div>
 		</div>
 		<!-- 页面导航栏菜单 -->
-		<div class="container-fluid">
+		<div class="container-fluid nav_container">
 			<div class="container">
 				<div class="navbar navbar-dark navbar-expand-lg">
 					<!-- 1.最左边，永远显示的菜单项-->
@@ -90,19 +90,31 @@
 						<ul class="navbar-nav">
 							<!-- 首页li -->
 							<li class="nav-item pr-4">
-								<a class="nav-link" href="#">首页
-									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									  <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-									</svg>
-								</a>
+								<a class="nav-link" href="#">首页</a>
 							</li>
 							<!-- 华为专区li -->
-							<li class="nav-item pr-4">
+							<li class="nav-item pr-4 dropdown">
 								<a class="nav-link" href="#">华为手环专区
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									  <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
 									</svg>
 								</a>
+								<!-- 华为专区下拉菜单 -->
+								<div class="container-fluid dropdown_container dropdown-menu">
+									<div class="container">
+										<ul class="list-unstyled">
+											<li>
+												<a href="#">
+													<img class="w-100" src="images/products/huawei/800_800_9418FE4D530F761E44A6A2D8D10CD92AA8FDABA3F0BF78F1mp.png" alt="">
+												</a>
+												<a href="#">
+													<p>华为手环 B6</p>
+													<p>￥999.00</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</li>
 							<!-- 小米专区li -->
 							<li class="nav-item pr-4">
@@ -174,7 +186,11 @@
 								<li class="breadcrumb-item">科学睡眠</li>
 							</ul>
 							<!-- 产品价格 -->
-							<p class="price m-0">￥999.00</p>
+							<div class="pro_sale">
+								<p class="price m-0">
+									<span>￥999.00</span>
+								</p>
+							</div>
 						</div>
 						<div class="intr_details mb-2 text-center">
 							<!-- 华为手环B6图片 -->
@@ -189,7 +205,12 @@
 								<li class="breadcrumb-item">科学睡眠</li>
 							</ul>
 							<!-- 产品价格 -->
-							<p class="price m-0">抢购价 ￥949.00 <span class="price2">￥999.00</span></p>
+							<div class="pro_sale">
+								<p class="price m-0">
+									<span>￥949.00</span>
+									<span class="price2">￥999.00</span>
+								</p>
+							</div>
 						</div>
 					</div>
 					<div class="pro_intr2 pl-2">
@@ -206,7 +227,12 @@
 								<li class="breadcrumb-item">健康管理</li>
 							</ul>
 							<!-- 产品价格 -->
-							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥199.00</span></p>
+							<div class="pro_sale">
+								<p class="price m-0">
+									<span>￥169.00</span>
+									<span class="price2">￥199.00</span>
+								</p>
+							</div>
 						</div>
 						<div class="intr_details text-center">
 							<!-- 华为手环4Pro图片 -->
@@ -221,7 +247,12 @@
 								<li class="breadcrumb-item">独立GPS</li>
 							</ul>
 							<!-- 产品价格 -->
-							<p class="price m-0">抢购价 ￥369.00 <span class="price2">￥399.00</span></p>
+							<div class="pro_sale">
+								<p class="price m-0">
+									<span>￥369.00</span>
+									<span class="price2">￥399.00</span>
+								</p>
+							</div>
 						</div>
 					</div>
 					<div class="pro_intr2 pl-2">
@@ -238,7 +269,12 @@
 								<li class="breadcrumb-item">50米防水</li>
 							</ul>
 							<!-- 产品价格 -->
-							<p class="price m-0">抢购价 ￥169.00 <span class="price2">￥189.00</span></p>
+							<div class="pro_sale">
+								<p class="price m-0">
+									<span>￥169.00</span>
+									<span class="price2">￥189.00</span>
+								</p>
+							</div>
 						</div>
 						<div class="intr_details text-center">
 							<!-- 荣耀手环4图片 -->
@@ -253,7 +289,12 @@
 								<li class="breadcrumb-item">睡眠质量监测</li>
 							</ul>
 							<!-- 产品价格 -->
-							<p class="price m-0">抢购价 ￥89.00 <span class="price2">￥99.00</span></p>
+							<div class="pro_sale">
+								<p class="price m-0">
+									<span>￥89.00</span>
+									<span class="price2">￥99.00</span>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -1,5 +1,5 @@
 /* 导航栏菜单容器的背景样式 */
-.container-fluid{
+.nav_container{
 	background-color: #ca151d;
 }
 /* 设置最左侧导航栏的菜单项文本样式 */
@@ -18,6 +18,7 @@ a.nav-link{
 a.nav-link:hover{
 	color: rgba(255,255,255,1)!important;
 }
+
 
 /* 楼层顶部样式 */
 .floor_top,.floor_top_xm,.floor_top_dd,.floor_top_fb{
