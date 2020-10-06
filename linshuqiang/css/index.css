@@ -19,6 +19,115 @@ a.nav-link:hover{
 	color: rgba(255,255,255,1)!important;
 }
 
+/* 设置下拉菜单样式 */
+ul.menu>li{position: relative;}
+ul.menu>li>ul{
+	width: 1010px;
+	position: absolute;
+	background-color: rgba(247,247,247);
+	box-shadow: 1px 2px 3px 0px #e8e8e8;
+	top: 52px;
+	text-align: center;
+}
+ul.menu>li>ul>li p{
+	margin-bottom: 0px;
+	font-size: 16px;
+	color: #000;
+}
+ul.menu>li>ul>li p:last-child{color: #f00!important;}
+ul.menu>li>ul>li a{text-decoration: none;}
+ul.menu>li>ul>li p:hover{color: #f00;}
+/* 华为专区下拉菜单 */
+ul.menu>li:nth-child(2)>ul{
+	top: 60px;
+	opacity: 0;
+	transition: top .5s linear,opacity,.5s linear;
+}
+ul.menu>li:nth-child(2):hover>ul{
+	display: block;
+	top: 52px;
+	opacity: 1;
+}
+ul.menu>li:nth-child(2)>ul{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+ul.menu>li:nth-child(2):hover>ul{
+	width: 1010px;
+	height: 260px;
+}
+/* 小米专区下拉菜单 */
+ul.menu>li:nth-child(3)>ul{
+	width: 840px;
+}
+ul.menu>li:nth-child(3)>ul{
+	top: 60px;
+	opacity: 0;
+	transition: top .5s linear,opacity,.5s linear;
+}
+ul.menu>li:nth-child(3):hover>ul{
+	display: block;
+	top: 52px;
+	opacity: 1;
+}
+ul.menu>li:nth-child(3)>ul{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+ul.menu>li:nth-child(3):hover>ul{
+	width: 840px;
+	height: 260px;
+}
+
+/* dido专区下拉菜单 */
+ul.menu>li:nth-child(4)>ul{
+	width: 660px;
+}
+ul.menu>li:nth-child(4)>ul{
+	top: 60px;
+	opacity: 0;
+	transition: top .5s linear,opacity,.5s linear;
+}
+ul.menu>li:nth-child(4):hover>ul{
+	display: block;
+	top: 52px;
+	opacity: 1;
+}
+ul.menu>li:nth-child(4)>ul{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+ul.menu>li:nth-child(4):hover>ul{
+	width: 660px;
+	height: 260px;
+}
+
+/* Fitbit专区下拉菜单 */
+ul.menu>li:nth-child(5)>ul{
+	width: 500px;
+}
+ul.menu>li:nth-child(5)>ul{
+	top: 60px;
+	opacity: 0;
+	transition: top .5s linear,opacity,.5s linear;
+}
+ul.menu>li:nth-child(5):hover>ul{
+	display: block;
+	top: 52px;
+	opacity: 1;
+}
+ul.menu>li:nth-child(5)>ul{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+ul.menu>li:nth-child(5):hover>ul{
+	width: 500px;
+	height: 260px;
+}
 
 /* 楼层顶部样式 */
 .floor_top,.floor_top_xm,.floor_top_dd,.floor_top_fb{
