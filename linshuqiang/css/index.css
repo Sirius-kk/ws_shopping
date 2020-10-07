@@ -189,6 +189,7 @@ ul.menu>li:nth-child(5):hover>ul{
 /* 设置楼层主体内容尺寸样式 */
 .pro_intr1,.pro_intr2{
 	width: 284.7px;
+	transition: .5s;
 }
 .intr_details{
 	height: 410px;
@@ -228,4 +229,28 @@ ul.menu>li:nth-child(5):hover>ul{
 	margin-left: 78px!important;
 	font-weight: bold;
 	color: #fff;
+}
+
+/* 设置产品图片鼠标悬停时的效果样式 */
+.intr_details>a img{
+	transition: .5s;
+}
+.intr_details>a img:hover{
+	transform: scale(0.9);
+}
+.intr_details>a:hover{
+	text-decoration: none;
+}
+.intr_details>a p:hover,.intr_details>a ul>li:hover{
+	color: #f00;
+}
+
+.intr_details:hover{
+	box-shadow: 1px 2px 3px 0px rgba(38,38,38,0.2);
+	transform: scale(0.98);
+}
+
+/* 设置各品牌专区顶部内容鼠标悬停时的效果样式 */
+a:hover{
+	text-decoration: none;
 }
