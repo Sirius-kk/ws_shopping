@@ -45,6 +45,7 @@ a.carousel-control-next{
 	width: 60px;
 	right: 20px;
 }
+
 /* 设置轮播图媒体查询 */
 @media (min-width:576px) {
 	.carousel-item>img{
