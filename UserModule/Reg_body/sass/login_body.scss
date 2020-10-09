@@ -23,7 +23,7 @@ iframe {
 		font-size: 12px;
 		color: #888;
 		.d-flex{
-			margin: 40px 0;
+			margin-top: 40px;
 			.num{
 				margin: 0 auto;
 				width: 24px;height: 24px;
@@ -51,6 +51,7 @@ iframe {
 	}
 	.log_down{
 		#login_1{
+			margin-top: 30px;
 			.btn{
 				height: 50px !important;
 				width: 100%;

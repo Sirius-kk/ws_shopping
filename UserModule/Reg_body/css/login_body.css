@@ -32,7 +32,7 @@ iframe {
     font-size: 12px;
     color: #888; }
     .container .log_up .d-flex {
-      margin: 40px 0; }
+      margin-top: 40px; }
       .container .log_up .d-flex .num {
         margin: 0 auto;
         width: 24px;
@@ -52,24 +52,26 @@ iframe {
         background: url(../../../public_img/user_img/reg-icon.png) 19px -33px; }
       .container .log_up .d-flex p {
         margin: 15px 0; }
-  .container .log_down #login_1 .btn {
-    height: 50px !important;
-    width: 100%; }
-  .container .log_down #login_1 button:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-right: 0; }
-  .container .log_down #login_1 .form-control {
-    height: 50px !important;
-    width: 282px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    font-family: Arial; }
-  .container .log_down #login_1 .dropdown-toggle, .container .log_down #login_1 .form-control, .container .log_down #login_1 .btn_1 {
-    font-size: 16px; }
-  .container .log_down #login_1 .dropdown-toggle {
-    width: 118px; }
-  .container .log_down #login_1 .btn_1, .container .log_down #login_1 .btn_2 {
-    margin-top: 40px; }
+  .container .log_down #login_1 {
+    margin-top: 30px; }
+    .container .log_down #login_1 .btn {
+      height: 50px !important;
+      width: 100%; }
+    .container .log_down #login_1 button:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      background-color: #fff;
+      border: 1px solid #ced4da;
+      border-right: 0; }
+    .container .log_down #login_1 .form-control {
+      height: 50px !important;
+      width: 282px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      font-family: Arial; }
+    .container .log_down #login_1 .dropdown-toggle, .container .log_down #login_1 .form-control, .container .log_down #login_1 .btn_1 {
+      font-size: 16px; }
+    .container .log_down #login_1 .dropdown-toggle {
+      width: 118px; }
+    .container .log_down #login_1 .btn_1, .container .log_down #login_1 .btn_2 {
+      margin-top: 40px; }
