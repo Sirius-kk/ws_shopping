@@ -78,6 +78,20 @@ iframe {
 			}
 			.btn_1,.btn_2{
 				margin-top: 40px;
+				&:hover{
+					background-color: #ccc;
+				}
+			}
+			.btn:hover,.form-control:hover{
+				border-color: #80bdff;
+			}
+			.btn_2{
+				font-size: 18px;
+				color: #fff;
+				background-color: #d2413e;
+				&:hover{
+					background-color: #b10704;
+				}
 			}
 		}
 	}

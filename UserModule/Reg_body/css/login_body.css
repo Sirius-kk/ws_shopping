@@ -75,3 +75,13 @@ iframe {
       width: 118px; }
     .container .log_down #login_1 .btn_1, .container .log_down #login_1 .btn_2 {
       margin-top: 40px; }
+      .container .log_down #login_1 .btn_1:hover, .container .log_down #login_1 .btn_2:hover {
+        background-color: #ccc; }
+    .container .log_down #login_1 .btn:hover, .container .log_down #login_1 .form-control:hover {
+      border-color: #80bdff; }
+    .container .log_down #login_1 .btn_2 {
+      font-size: 18px;
+      color: #fff;
+      background-color: #d2413e; }
+      .container .log_down #login_1 .btn_2:hover {
+        background-color: #b10704; }
