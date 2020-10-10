@@ -7,7 +7,7 @@ iframe {
   height: 130px; }
 
 .container-fluid, .container {
-  height: 440px; }
+  height: 655px; }
 
 /* 大背景 */
 .container-fluid {
@@ -26,13 +26,12 @@ iframe {
   box-shadow: 0 0 0 0 #000 !important; }
 
 .container {
-  width: 430px;
-  height: 440px; }
+  width: 500px; }
   .container .log_up {
     font-size: 12px;
     color: #888; }
     .container .log_up .d-flex {
-      margin-top: 40px; }
+      margin-top: 80px; }
       .container .log_up .d-flex .num {
         margin: 0 auto;
         width: 24px;
@@ -53,9 +52,9 @@ iframe {
       .container .log_up .d-flex p {
         margin: 15px 0; }
   .container .log_down #login_1 {
-    margin-top: 40px; }
+    margin-top: 70px; }
     .container .log_down #login_1 .btn {
-      height: 50px !important;
+      height: 55px !important;
       width: 100%; }
     .container .log_down #login_1 button:first-child {
       border-top-right-radius: 0;
@@ -64,8 +63,8 @@ iframe {
       border: 1px solid #ced4da;
       border-right: 0; }
     .container .log_down #login_1 .form-control {
-      height: 50px !important;
-      width: 282px;
+      height: 55px !important;
+      width: 352px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       font-family: Arial; }
@@ -74,14 +73,19 @@ iframe {
     .container .log_down #login_1 .dropdown-toggle {
       width: 118px; }
     .container .log_down #login_1 .btn_1, .container .log_down #login_1 .btn_2 {
-      margin-top: 40px; }
+      margin-top: 70px; }
       .container .log_down #login_1 .btn_1:hover, .container .log_down #login_1 .btn_2:hover {
         background-color: #ccc; }
     .container .log_down #login_1 .btn:hover, .container .log_down #login_1 .form-control:hover {
       border-color: #80bdff; }
     .container .log_down #login_1 .btn_2 {
       font-size: 18px;
+      font-weight: bold;
       color: #fff;
       background-color: #d2413e; }
       .container .log_down #login_1 .btn_2:hover {
         background-color: #b10704; }
+  .container .log_down #login_3 {
+    display: none; }
+
+/*# sourceMappingURL=reg_body.css.map */
