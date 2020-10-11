@@ -1,20 +1,25 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>reg_boot</title>
+		<title>log_boot</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/reg_body.css"/>
+		<link rel="stylesheet" type="text/css" href="css/log_body.css"/>
 		<script src="js/reg_body.js"></script>
 	</head>
 	<body>
 		<div id="head">
-			<iframe src="../../LoginAndReg_pub/BootPub/login_header_boot.html" width="100%" scrolling="no"></iframe>
+			<iframe src="../LoginAndReg_pub/BootPub/login_header_boot.html" width="100%" scrolling="no"></iframe>
 		</div>
-		<div class="container-fluid">
+		<div class="container-fluid no-gutters">
+			<div class="warnning">
+				<!-- <img src="../../public_img/user_img/warnning.png" alt=""> -->
+				<p><span></span>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="#">《沃斯隐私政策》</a>已上线，将更有利于保护您的个人隐私。
+				</p>
+			</div>
 			<div class="container">
 				<div class="row">
 					<div class="reg_body offset-lg-7 col-lg-4 justify-content-center"><!-- 目标区域 -->
@@ -35,8 +40,27 @@
 								</div>
 							</div>
 							<div id="code_reg"><!-- 扫码登陆 -->
-								<img class="ewm" src="../../../public_img/user_img/erweima.gif" >
-								<img class="phone" src="../../../public_img/user_img/phonesaoma.png" >
+								<img class="ewm" src="../../public_img/user_img/erweima.gif" >
+								<img class="phone" src="../../public_img/user_img/phonesaoma.png" >
+								<div>
+									<div>
+										打开<a href="#">手机沃斯 </a> 扫描二维码
+									</div>
+									<ul>
+										<li>
+											<span></span>
+											<em>免输入</em>
+										</li>
+										<li>
+											<span></span>
+											<em>更快</em>
+										</li>
+										<li>
+											<span></span>
+											<em>更安全</em>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<hr class="hr2 mb-0 mt-2" noshade>
@@ -49,9 +73,9 @@
 						</div>
 						<div><!-- 图标登陆 -->
 							<ul class="nav justify-content-center">
-								<li class="nav-link"><a href=""><img src="../../../public_img/user_img/qq.png"></a></li>
-								<li class="nav-link"><a href=""><img src="../../../public_img/user_img/wx.png"></a></li>
-								<li class="nav-link"><a href=""><img src="../../../public_img/user_img/zfb.png"></a></li>
+								<li class="nav-link"><a href=""><img src="../../public_img/user_img/qq.png"></a></li>
+								<li class="nav-link"><a href=""><img src="../../public_img/user_img/wx.png"></a></li>
+								<li class="nav-link"><a href=""><img src="../../public_img/user_img/zfb.png"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -59,7 +83,7 @@
 			</div>
 		</div>
 		<div id="foot">
-			<iframe src="../../LoginAndReg_pub/BootPub/login_footer_boot.html" width="100%" scrolling="no" height=""></iframe>
+			<iframe src="../LoginAndReg_pub/BootPub/login_footer_boot.html" width="100%" scrolling="no" height=""></iframe>
 		</div>
 	</body>
 </html>
