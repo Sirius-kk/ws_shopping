@@ -93,56 +93,58 @@ iframe{border: 0;}
 			padding-top: 30px;
 			margin-bottom: 18.8px;
 			position: relative;
-			.phone{
-				position: absolute;
-				right: 10px;
-				top: 16px;
-				opacity: 0;
-			}
-			.ewm{
-				transition: transform .5s;
-			}
-			&:hover{
-				.ewm{
-					transform: translate(-70px);
-				}
+			.code_1{
 				.phone{
-					opacity: 1;
-					transition: opacity 1s .2s ease-in-out;
+					position: absolute;
+					right: 10px;
+					top: 16px;
+					opacity: 0;
+				}
+				.ewm{
+					transition: transform .5s;
+				}
+				&:hover{
+					.ewm{
+						transform: translate(-70px);
+					}
+					.phone{
+						opacity: 1;
+						transition: opacity 1s .2s ease-in-out;
+					}
 				}
 			}
-		}
-		#code_reg>div{
-			text-align: center;
-			position: absolute;
-			bottom: -115px;
-			left: 53px;
-			font-size: $samll_font;
-			a{
-				padding-right: 13px;
-				color: #e4393c;
-			}
-			ul{
-				margin-top: 10px;
-				list-style: none;
-				padding: 0;
-				display: flex;
-				span{
-					display: inline-block;
-					width: 25px;height: 25px;
-					vertical-align: middle;
+			.code_2{
+				text-align: center;
+				position: absolute;
+				bottom: -115px;
+				left: 53px;
+				font-size: $samll_font;
+				a{
+					padding-right: 13px;
+					color: #e4393c;
 				}
-				li+li{
-					margin-left: 20px;
-				}
-				li:first-child>span{
-					background: url(../../../public_img/user_img/bottom_img.png) no-repeat;
-				}
-				li:nth-child(2)>span{
-					background: url(../../../public_img/user_img/bottom_img.png) no-repeat -27px;
-				}
-				li:last-child>span{
-					background: url(../../../public_img/user_img/bottom_img.png) no-repeat -54px;
+				ul{
+					margin-top: 10px;
+					list-style: none;
+					padding: 0;
+					display: flex;
+					span{
+						display: inline-block;
+						width: 25px;height: 25px;
+						vertical-align: middle;
+					}
+					li+li{
+						margin-left: 20px;
+					}
+					li:first-child>span{
+						background: url(../../../public_img/user_img/bottom_img.png) no-repeat;
+					}
+					li:nth-child(2)>span{
+						background: url(../../../public_img/user_img/bottom_img.png) no-repeat -27px;
+					}
+					li:last-child>span{
+						background: url(../../../public_img/user_img/bottom_img.png) no-repeat -54px;
+					}
 				}
 			}
 		}
