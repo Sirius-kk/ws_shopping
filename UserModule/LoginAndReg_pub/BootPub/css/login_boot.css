@@ -1,22 +1,22 @@
 @charset "UTF-8";
-.container-fluid {
+.fluid_hf {
   background-color: #e9ecef;
   margin: 0 auto; }
-  .container-fluid .header {
+  .fluid_hf .header {
     height: 130px;
     margin-bottom: 0;
     font-weight: bold !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.25rem; }
-    .container-fluid .header .breadcrumb-item + .breadcrumb-item::before {
+    .fluid_hf .header .breadcrumb-item + .breadcrumb-item::before {
       content: "|";
       padding-left: 1.5rem;
       padding-right: 1.5rem; }
-    .container-fluid .header .breadcrumb-item {
+    .fluid_hf .header .breadcrumb-item {
       color: #790603; }
-      .container-fluid .header .breadcrumb-item img {
+      .fluid_hf .header .breadcrumb-item img {
         width: 240px; }
-  .container-fluid div.foot {
+  .fluid_hf div.foot {
     height: 150px;
     width: 1110px;
     margin: 0 auto;
@@ -25,19 +25,19 @@
     background-color: #e9ecef;
     text-align: center;
     font-size: .75rem; }
-    .container-fluid div.foot::before {
+    .fluid_hf div.foot::before {
       /* before和after是在元素内部最前边或者最后边插入元素。display:table解决上边距缺失;display:block解决高度坍塌 */
       content: "";
       display: table; }
-    .container-fluid div.foot .footer {
+    .fluid_hf div.foot .footer {
       margin-top: 35px;
       justify-content: center; }
-      .container-fluid div.foot .footer a {
+      .fluid_hf div.foot .footer a {
         text-decoration: none;
         color: #000000; }
-        .container-fluid div.foot .footer a:hover {
+        .fluid_hf div.foot .footer a:hover {
           text-decoration: underline; }
-    .container-fluid div.foot p {
+    .fluid_hf div.foot p {
       opacity: .3;
       padding-bottom: 1rem; }
 

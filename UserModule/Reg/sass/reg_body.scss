@@ -1,11 +1,11 @@
 /* 引入部分调整 */
-iframe {
-  border: 0; }
-#head iframe {
-  height: 130px; }
- .container-fluid,.container{	height: 655px; }
+// iframe {
+//   border: 0; }
+// #head iframe {
+//   height: 130px; }
+//  .fluid_body>.container{	height: 655px; }
  /* 大背景 */
-.container-fluid{
+.fluid_body{
 	background: #ECE9E6;
 	/* fallback for old browsers */
 	background: linear-gradient(to left, #FFFFFF, #ECE9E6);
@@ -16,8 +16,67 @@ iframe {
 /* 公共调整 */
 .btn{box-shadow: 0 0 0 0 #000 !important;}
 .form-control{box-shadow: 0 0 0 0 #000 !important;}
+// 创建变量
+$main_color: #790603;
+$font_weight: bold;
+$bg_color: #e9ecef;
+$font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// 使用变量
+.fluid_hf{
+	background-color: #e9ecef;
+	margin: 0 auto;
+	.header{// header
+		height: 130px;
+		margin-bottom: 0;
+		font-weight: $font_weight !important;
+		font-family: $font_family;
+		font-size: 1.25rem;
+		.breadcrumb-item + .breadcrumb-item::before{
+			content: "|";
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+		.breadcrumb-item{
+			color: $main_color;
+			img{
+				width: 240px;
+			}
+		}
+	}
+	// footer
+	div.foot{
+		height: 150px;width: 1110px;
+		margin: 0 auto;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		background-color: $bg_color;
+		text-align: center;
+		font-size: .75rem;
+		&::before{/* before和after是在元素内部最前边或者最后边插入元素。display:table解决上边距缺失;display:block解决高度坍塌 */
+			content: "";
+			display: table;
+		}
+		.footer{
+			margin-top: 35px;
+			justify-content: center;
+			a{
+				text-decoration: none;
+				color: #000000;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		p{
+			opacity: .3;
+			padding-bottom: 1rem;
+		}
+	 }
+} 
 // 样式调整
-.container{
+.fluid_body>.container{
+	height: 655px;
 	width: 500px;
 	.log_up{
 		font-size: 12px;
