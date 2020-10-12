@@ -1,9 +1,3 @@
-/* 引入部分调整 */
-// iframe {
-//   border: 0; }
-// #head iframe {
-//   height: 130px; }
-//  .fluid_body>.container{	height: 655px; }
  /* 大背景 */
 .fluid_body{
 	background: #ECE9E6;
@@ -24,7 +18,7 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 
 // 使用变量
 .fluid_hf{
-	background-color: #e9ecef;
+	background-color: $bg_color;
 	margin: 0 auto;
 	.header{// header
 		height: 130px;
@@ -32,13 +26,13 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 		font-weight: $font_weight !important;
 		font-family: $font_family;
 		font-size: 1.25rem;
-		.breadcrumb-item + .breadcrumb-item::before{
-			content: "|";
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
-		}
 		.breadcrumb-item{
 			color: $main_color;
+			& + .breadcrumb-item::before{
+				content: "|";
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
 			img{
 				width: 240px;
 			}
@@ -123,6 +117,9 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 				border: 1px solid #ced4da;
 				border-right: 0;
 			}
+			// #phone_tip{
+			// 	float: left;
+			// }
 			.form-control{
 				height: 55px !important;
 				width: 352px;
@@ -156,9 +153,9 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 				}
 			}
 		}
-		// #login_2{
-			
-		// }
+		#login_2{
+			display: none;	
+		}
 		#login_3{
 			display: none;
 		}

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* 引入部分调整 */
 /* 大背景 */
 .fluid_body {
   background: #ECE9E6;
@@ -25,12 +24,12 @@
     font-weight: bold !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.25rem; }
-    .fluid_hf .header .breadcrumb-item + .breadcrumb-item::before {
-      content: "|";
-      padding-left: 1.5rem;
-      padding-right: 1.5rem; }
     .fluid_hf .header .breadcrumb-item {
       color: #790603; }
+      .fluid_hf .header .breadcrumb-item + .breadcrumb-item::before {
+        content: "|";
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; }
       .fluid_hf .header .breadcrumb-item img {
         width: 240px; }
   .fluid_hf div.foot {
@@ -120,7 +119,7 @@
       background-color: #d2413e; }
       .fluid_body > .container .log_down #login_1 .btn_2:hover {
         background-color: #b10704; }
+  .fluid_body > .container .log_down #login_2 {
+    display: none; }
   .fluid_body > .container .log_down #login_3 {
     display: none; }
-
-/*# sourceMappingURL=reg_body.css.map */

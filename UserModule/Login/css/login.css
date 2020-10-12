@@ -97,7 +97,11 @@
       color: #e4393c;
       font-weight: bold; }
 .reg_body .body_play {
-  height: 280px; }
+  height: 308.5px;
+  padding-top: 20px;
+  padding-bottom: 8.5px;
+  border-top: 1.5px solid;
+  border-bottom: 1px solid; }
   .reg_body .body_play .body_account_input {
     width: 300px;
     margin: 0 auto;
@@ -172,4 +176,4 @@
   .reg_body .body_account_tip li a {
     font-size: .8rem; }
 
-/*# sourceMappingURL=log_body.css.map */
+/*# sourceMappingURL=login.css.map */
