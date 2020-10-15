@@ -146,8 +146,10 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 			background-color: #CA141D;
 			border: 0;
 		}
-		#code_reg{
+		.account_reg{
 			display: none;
+		}
+		.code_reg{
 			padding-top: 30px;
 			margin-bottom: 18.8px;
 			position: relative;
