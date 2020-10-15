@@ -119,7 +119,11 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 	}
 	// .hr1{size: 5px;}
 	.body_play{
-		height: 280px;
+		height: 308.5px;
+		padding-top: 20px;
+		padding-bottom: 8.5px;
+		border-top: 1.5px solid;
+		border-bottom: 1px solid;
 		.body_account_input{
 			width: 300px;
 			margin: 0 auto;
