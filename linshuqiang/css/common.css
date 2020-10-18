@@ -1,39 +1,206 @@
-/* 清除页面所有内外边距 */
-*{
-	margin: 0;
-	padding: 0;
-}
-/* 统一设置页面字体样式 */
+*{margin: 0;padding: 0;}
+
 body{
 	font-size: 14px;
 	color: #3A3A3A;
 	font-family: "microsoft yahei";
-	background-color: rgba(243,243,243,0.6);
 }
-/* 设置引入的页面头部样式 */
-.page_header{
-	width: 100%;
-	background-color: #fff;
+
+.logo_icon{width: 200px;}
+
+.form-control {
+	height: 32px;
+    font-size: 12px;
+    background-color: rgba(240,240,240,0.8);
+    border-radius: 1rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
-/* 设置页面头部媒体查询 */
-@media (min-width:576px) {
-	.page_header{
-		height: 150px;
-	}
-	
+
+.form-control:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem rgba(202, 21, 26, 0.25);
 }
-@media (min-width:768px) {
-	.page_header{
-		height: 150px;
-	}
+
+.form-control::placeholder {
+  color: #666;
+  opacity: 0.5;
 }
+
+.my_input{position: relative;}
+
+.search_icon{
+	position: absolute;
+	right: 0px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "|";
+}
+
+.breadcrumb-item>a{
+	color: #666;
+}
+
+.breadcrumb-item>a:hover {
+  color: #ca151d;
+  text-decoration: none;
+}
+
+.wish_num,.cart_num{color: #ca151d;}
+
+.wish_content{
+	width: 50px;
+	height: 60px;
+	background-color: #ddd;
+	z-index: 9999;
+}
+
 @media (min-width:992px) {
-	.page_header{
-		height: 150px;
+	.breadcrumb-item>a{
+		font-size: 12px;
 	}
 }
-@media (min-width:1009px) {
-	.page_header{
-		height: 93px;
+
+@media (min-width:1200px) {
+	.breadcrumb-item>a{
+		font-size: 14px;
 	}
+}
+
+@media (min-width:992px) {
+	.form-control{
+		margin-left: 25px;
+	}
+}
+
+/* 页面底部样式 */
+.slogan_container{
+	font-size: 18px;
+}
+
+.slogan_container>div>div{border-bottom: 1px solid #ddd;}
+
+.slogan_container>div>div>ul>li a{color: #666;}
+
+.slogan_container>div>div>ul>li a:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+@media (max-width:768px) {
+	.slogan_container{
+		font-size: 13px;
+	}
+	.slogan_container .my_img{
+		margin-right: 0px!important;
+	}
+}
+
+.service_lf>div>ul li{
+	padding-bottom: 6px;
+	font-size: 16px;
+}
+
+.service_lf>div>ul li>a{
+	font-size: 14px;
+	color: #666;
+}
+
+.service_lf>div>ul li>a:hover{
+	color: #ca151d;
+	text-decoration: none;
+}
+
+.service_rt>p:first-child{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.btn-dark {
+    width: 180px;	
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    border-radius: 1.5rem;
+    font-size: 14px;
+}
+
+.btn-dark:hover {
+  background-color: #666;
+  border-color: #666;
+}
+
+.btn-dark:focus, .btn-dark.focus {
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.service_code>h2{
+	font-size: 14px;
+	color: #333;
+}
+
+.service_code>ul>li a{
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+}
+
+.service_code>ul>li:first-child>a{
+	background: url(../images/icon/weixin.png) no-repeat;
+}
+
+.service_code>ul>li:nth-child(2)>a{
+	background: url(../images/icon/sina.png) no-repeat;
+}
+
+.service_code>ul>li:nth-child(3)>a{
+	background: url(../images/icon/top_news.png) no-repeat;
+}
+
+.service_code>ul>li:last-child>a{
+	background: url(../images/icon/self_service.png) no-repeat;
+}
+
+.service_code>ul>li>a:hover{
+	opacity: 0.5;
+}
+
+.service_code>>ul>li:first-child{
+	position: relative;
+}
+
+.wx_erweima{
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	position: absolute;
+	top: 170px;
+	left: 60px;
+	background: #fff;
+	box-shadow: 0px 1px 5px rgba(158,158,158,0.6);
+	transition: top .5s linear,opacity .5s linear;
+	overflow: hidden;
+}
+
+.wx_erweima>img{
+	width: 108px;
+	height: 108px;
+	vertical-align: top;
+	margin: 6px;
+}
+
+.service_code>ul>li:first-child:hover>.wx_erweima{
+	display: block;
+	top: 163px;
+	opacity: 1;
+	width: 120px;
+	height: 120px;
 }
