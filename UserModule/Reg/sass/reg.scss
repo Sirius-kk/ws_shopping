@@ -78,69 +78,57 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 		.d-flex{
 			margin-top: 80px;
 			.num{
-				margin: 0 auto;
 				width: 24px;height: 24px;
+				margin: 0 auto;
 				line-height: 20px;
 				border: 2px solid #888;
 				border-radius: 50%;
 				text-align: center;
 			}
-			#num_1{
-				color: #fff ;
-				background: #33bb44;
-			}
-			#tip_1{
-				color: #33bb44;
-			}
-			#arrow_1,#arrow_2{
-				width: 101px;height: 24px;
-				background: url(../../../public_img/user_img/reg-icon.png) 19px -33px;
-				// background: url(../../../public_img/user_img/reg-icon.png) 19px -63px;绿色箭头
-			}
 			p{
 				margin: 15px 0;
+			}
+			.arrow{
+				width: 101px;height: 24px;
+				background: url(../../../public_img/user_img/reg-icon.png) 19px -33px;
+			}
+			/* 变化后 */
+			.num_change{
+				width: 24px;height: 24px;
+				margin: 0 auto;
+				background: #33bb44;
+				line-height: 20px;
+				border: 2px solid #888;
+				border-radius: 50%;
+				text-align: center;
+				color: #fff ;
+			}
+			/* 变化后 */
+			.tip_change{
+				color: #33bb44;
+			}
+			/* 变化后 */
+			.arrow_change{
+				width: 101px;height: 24px;
+				background: url(../../../public_img/user_img/reg-icon.png) 19px -63px;
 			}
 		}
 	}
 	.log_down{
-		#login_1{
-			display: none;/* 部分一，隐藏 */
+		#login_1,#login_2,#login_3{
 			margin-top: 60px;
-			.btn{
-				height: 55px !important;
-				width: 100%;
-			}
-			button:first-child{
-				border-top-right-radius: 0;
-				border-bottom-right-radius: 0;
-				background-color: #fff;
-				border: 1px solid #ced4da;
-				border-right: 0;
-			}
-			// #phone_tip{
-			// 	float: left;
-			// }
 			.form-control{
 				height: 55px !important;
 				width: 352px;
+				border-radius: 4px !important;
 				border-top-left-radius: 0;
 				border-bottom-left-radius: 0;
 				font-family: Arial;
 			}
-			.dropdown-toggle,.form-control,.btn_1{
-				font-size: 16px;
-			}
-			.dropdown-toggle{
-				width: 118px;
-			}
-			.btn_1,.btn_2{
-				margin-top: 50px;
-				&:hover{
-					background-color: #ccc;
-				}
-			}
-			.btn:hover,.form-control:hover{
-				border-color: #80bdff;
+			.btn{
+				height: 55px !important;
+				width: 100%;
+				border-radius: 4px;
 			}
 			.btn_2{
 				margin-top: 75px;
@@ -152,9 +140,48 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 					background-color: #b10704;
 				}
 			}
+			.btn:hover,.form-control:hover{
+				border-color: #80bdff;
+			}
+		}
+		#login_1{
+			display: none;/* 部分一，隐藏 */
+			margin-top: 60px;
+			button:first-child{
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				background-color: #fff;
+				border: 1px solid #ced4da;
+				border-right: 0;
+			}
+			.dropdown-toggle,.form-control,.btn_1{
+				font-size: 16px;
+			}
+			.dropdown-toggle{
+				width: 118px;
+			}
+			// .btn:hover,.form-control:hover{
+			// 	border-color: #80bdff;
+			// }
+			.btn_1{
+				margin-top: 50px;
+				&:hover{
+					background-color: #ccc;
+				}
+			}
 		}
 		#login_2{
-			display: none;	
+			// display: none;	
+			margin-top: 60px;
+			.form-control{
+				width: 470px;
+				&~.form-control{
+					margin-top: 30px;
+				}
+			}
+			.btn{
+				margin-top: 35px;
+			}
 		}
 		#login_3{
 			// display: none;

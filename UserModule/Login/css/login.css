@@ -77,6 +77,7 @@
 .reg_body hr {
   width: 350px; }
 .reg_body .body_account_header {
+  width: 350px;
   height: 70px;
   margin-top: 45px;
   margin-bottom: 0; }
@@ -97,6 +98,7 @@
       color: #e4393c;
       font-weight: bold; }
 .reg_body .body_play {
+  width: 350px;
   height: 308.5px;
   padding-top: 20px;
   padding-bottom: 8.5px;
@@ -133,13 +135,17 @@
     .reg_body .body_play .code_reg .code_1 .phone {
       position: absolute;
       right: 10px;
-      top: 16px;
+      top: 15px;
       opacity: 0; }
     .reg_body .body_play .code_reg .code_1 .ewm {
       transition: transform .5s; }
-    .reg_body .body_play .code_reg .code_1:hover .ewm {
-      transform: translate(-70px); }
-    .reg_body .body_play .code_reg .code_1:hover .phone {
+    .reg_body .body_play .code_reg .code_1 .ewm1 {
+      transform: translate(-70px);
+      transition: transform .5s; }
+    .reg_body .body_play .code_reg .code_1 .phone1 {
+      position: absolute;
+      right: 10px;
+      top: 15px;
       opacity: 1;
       transition: opacity 1s .2s ease-in-out; }
     .reg_body .body_play .code_reg .code_2 {
@@ -176,5 +182,3 @@
     padding-bottom: 5px; }
   .reg_body .body_account_tip li a {
     font-size: .8rem; }
-
-/*# sourceMappingURL=login.css.map */
