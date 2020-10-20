@@ -104,7 +104,7 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 	}
 	.log_down{
 		#login_1{
-			//display: none;/* 部分一，隐藏 */
+			display: none;/* 部分一，隐藏 */
 			margin-top: 60px;
 			.btn{
 				height: 55px !important;
@@ -157,7 +157,22 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 			display: none;	
 		}
 		#login_3{
-			display: none;
+			// display: none;
+			text-align: center;
+			span{
+				display: block;
+				margin-top: 30px;
+				font-size: 40px;
+				font-weight: bolder;
+				&~a{
+					margin-top: 55px;
+					font-size: 24px;
+					color: #666;
+				}
+			}
+			a{
+				display: block;
+			}
 		}
 	}
 }

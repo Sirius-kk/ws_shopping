@@ -85,6 +85,8 @@
       .fluid_body > .container .log_up .d-flex p {
         margin: 15px 0; }
   .fluid_body > .container .log_down #login_1 {
+    display: none;
+    /* 部分一，隐藏 */
     margin-top: 60px; }
     .fluid_body > .container .log_down #login_1 .btn {
       height: 55px !important;
@@ -122,4 +124,17 @@
   .fluid_body > .container .log_down #login_2 {
     display: none; }
   .fluid_body > .container .log_down #login_3 {
-    display: none; }
+    text-align: center; }
+    .fluid_body > .container .log_down #login_3 span {
+      display: block;
+      margin-top: 30px;
+      font-size: 40px;
+      font-weight: bolder; }
+      .fluid_body > .container .log_down #login_3 span ~ a {
+        margin-top: 55px;
+        font-size: 24px;
+        color: #666; }
+    .fluid_body > .container .log_down #login_3 a {
+      display: block; }
+
+/*# sourceMappingURL=reg.css.map */
