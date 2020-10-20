@@ -142,9 +142,12 @@
       position: absolute;
       top: 18px;
       right: 45px;
-      color: #d85a49;
-      font-size: 12px;
-      display: none; }
+      font-size: 12px; }
+      .fluid_body > .container .log_down #login_1 span .pho_err {
+        display: none;
+        color: #d85a49; }
+      .fluid_body > .container .log_down #login_1 span .pho_cor {
+        color: #5fbc5a; }
   .fluid_body > .container .log_down #login_2 {
     display: none;
     margin-top: 60px; }
