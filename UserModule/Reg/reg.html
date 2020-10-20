@@ -25,7 +25,7 @@
 							<div class="num_change">1 </div>
 							<p class="tip_change">验证手机</p>
 						</div>
-						<div class="arrow_change"></div>
+						<div class="arrow"></div>
 						<div>
 							<div class="num">2</div>
 							<p>填写账号信息</p>
@@ -47,8 +47,9 @@
 									<li><a href="">其他</a></li>
 								</ul>
 							</div>
-							<!-- <span id="phone_tip">123</span> -->
 							<input class="form-control d-inline-block" maxlength="11" placeholder="请输入手机号">
+							<span class="pho_err">格式有误</span>
+							<span class="pho_cor">格式正确</span>
 							<button class="btn btn_1">点击按钮进行验证</button>
 							<button class="btn btn_2">下一步</button>
 						</div>
@@ -60,13 +61,14 @@
 								<input class="form-control d-inline-block" maxlength="11" type="text" placeholder="密码">
 								<input class="form-control d-inline-block" maxlength="11" type="text" placeholder="确认密码">
 							</div>
-							<button class="btn btn_2">确定</button>
+							<button class="btn btn_2">提交信息</button>
 						</div>
 					</div>
 					<div id="login_3"><!-- 注册下半部3 -->
 						<span>注册成功！</span>
-						<a href="">5秒后自动登录，并进入主页</a>
-						<a href="">等等，我想先完善信息</a>
+						<a href="">继续完善信息</a>
+						<a href="">马上进入主页</a>
+						<a href="">8秒后自动登录，并进入主页</a>
 					</div>
 				</div>
 			</div>
@@ -85,6 +87,7 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-1.11.3.js"></script>
 		<script src="js/reg.js"></script>
 	</body>
 </html>
