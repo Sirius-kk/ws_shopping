@@ -36,14 +36,16 @@ for(var btn of btns){// 遍历每个按钮添加事件
 var code_1=document.querySelector(".code_1");
 // console.log(ewm); // 11
 // 2. 绑定
-code_1.onmouseover=function(){
+// code_1.onmouseover=function(){/* over存在bug，使用enter */
+code_1.onmouseenter=function(){
 	// 3. 查找
 	var ewm=document.querySelector(".code_1>img:first-child");
 	var phone=document.querySelector(".code_1>img:last-child");
 	phone.className="phone1";
 	ewm.className="ewm1";
 };
-code_1.onmouseout=function(){
+// code_1.onmouseout=function(){/* out存在bug，使用leave */
+code_1.onmouseleave=function(){
 	// 3. 查找
 	var ewm=document.querySelector(".code_1>img:first-child");
 	var phone=document.querySelector(".code_1>img:last-child");
