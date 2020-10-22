@@ -23,6 +23,7 @@ log1_inp.onblur=function(){
   // 当格式正确后则在后边第一个span加类名(显示“格式正确” correct 的图标)
   // 同时把后边的第二个span的类名去掉
     this.nextElementSibling.className="pho_cor";
+    $(this).prev().prev().css("border","2px solid #32da40");
     this.nextElementSibling.nextElementSibling.className="";
     // 取消 验证按钮 的不可选中状态
     $("#login_1 .btn_1").prop("disabled",false).addClass("btn_11");
