@@ -104,8 +104,8 @@
       height: 55px !important;
       width: 352px;
       border-radius: 4px !important;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
       font-family: Arial; }
     .fluid_body > .container .log_down #login_1 .btn, .fluid_body > .container .log_down #login_2 .btn, .fluid_body > .container .log_down #login_3 .btn {
       height: 55px !important;
@@ -123,6 +123,8 @@
     .fluid_body > .container .log_down #login_1 .btn:hover, .fluid_body > .container .log_down #login_1 .form-control:hover, .fluid_body > .container .log_down #login_2 .btn:hover, .fluid_body > .container .log_down #login_2 .form-control:hover, .fluid_body > .container .log_down #login_3 .btn:hover, .fluid_body > .container .log_down #login_3 .form-control:hover {
       border-color: #80bdff; }
   .fluid_body > .container .log_down #login_1 {
+    display: none;
+    /* 部分一，隐藏 */
     margin-top: 60px;
     position: relative; }
     .fluid_body > .container .log_down #login_1 button:first-child {
@@ -167,7 +169,6 @@
     .fluid_body > .container .log_down #login_2 .btn {
       margin-top: 35px; }
   .fluid_body > .container .log_down #login_3 {
-    display: none;
     text-align: center; }
     .fluid_body > .container .log_down #login_3 span {
       display: block;
