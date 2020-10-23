@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/dropdown-item1.css">
 	</head>
 	<body>
 		<!-- 引入首页头部 -->
@@ -68,41 +69,27 @@
 		</div>
 		<!-- 导航菜单栏 -->
 		<div class="container-fluid page_nav">
-			<!-- 响应式导航栏 -->
-			<div class="navbar navbar-dark navbar-expand-lg p-0">
-				<!-- 全部商品菜单项,随着屏幕大小改变，永远显示 -->
-				<a class="navbar-brand" href="#">
-					全部商品
-					<img src="images/icon/order_icon.png">
-				</a>
-				<!-- 导航栏按钮，lg以下显示，lg以上隐藏 -->
-				<button data-toggle="collapse" data-target="#d1" class="navbar-toggler">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!-- 隐藏的菜单 -->
-				<div id="d1" class="collapse navbar-collapse justify-content-around">
-					<!-- 菜单项列表 -->
-					<ul class="navbar-nav text-center">
-						<!-- 华为专区菜单项 -->
-						<li class="nav-item">
-							<a class="nav-link" href="#">华为手环专区</a>
-							<!-- 华为手环专区下拉菜单 -->
-							
-						</li>
-						<!-- 小米专区菜单项 -->
-						<li class="nav-item">
-							<a class="nav-link" href="#">小米手环专区</a>
-						</li>
-						<!-- dido专区菜单项 -->
-						<li class="nav-item">
-							<a class="nav-link" href="#">dido手环专区</a>
-						</li>
-						<!-- Fitbit专区菜单项 -->
-						<li class="nav-item">
-							<a class="nav-link" href="#">Fitbit手环专区</a>
-						</li>
-					</ul>
-				</div>
+			<div class="container px-0">
+				<ul class="list-unstyled mb-0 d-flex justify-content-between">
+					<li>
+						<a href="javascript:;">
+							全部商品
+							<img src="images/icon/order_icon.png">
+						</a>
+					</li>
+					<li>
+						<a id="my_menu" href="#hw">华为手环专区</a>
+					</li>
+					<li>
+						<a href="#xm">小米手环专区</a>
+					</li>
+					<li>
+						<a href="#dido">dido手环专区</a>
+					</li>
+					<li>
+						<a href="#fitbit">Fitbit手环专区</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<!-- 新品推荐 热销单品、精品推荐和品牌专区内容区块 -->
@@ -246,7 +233,7 @@
 					<h4>精品推荐</h4>
 				</div>
 				<div class="recommend_details">
-					<ul class="recommend_list list-unstyled">
+					<ul id="lists" class="recommend_list list-unstyled">
 						<li class="recommend_items">
 							<a href="#">
 								<p class="recommend_img">
@@ -390,7 +377,7 @@
 					</a>
 				</div>
 				<!-- 华为手环专区主体内容 --> 
-				<div class="main_content">
+				<div class="main_content" id="hw">
 					<!-- 主体内容标题 -->
 					<div class="main_content_title mt-4">
 						<h4>华为手环专区</h4>
@@ -578,7 +565,7 @@
 			</div>
 		</div>
 		<!-- 小米手环专区 -->
-		<div class="container px-0 mt-4 clearfix">
+		<div class="container px-0 mt-4 clearfix" id="xm">
 			<div class="xm_content">
 				<!-- 小米手环专区头部内容 -->
 				<div class="top_content float-left">
@@ -814,7 +801,7 @@
 			</div>
 		</div>
 		<!-- dido手环专区 -->
-		<div class="container px-0 mt-4 clearfix">
+		<div class="container px-0 mt-4 clearfix" id="dido">
 			<div class="dd_content">
 				<!-- dido手环专区头部内容 -->
 				<div class="top_content float-left">
@@ -1012,7 +999,7 @@
 			</div>
 		</div>
 		<!-- Fitbit手环专区 -->
-		<div class="container px-0 mt-4 clearfix">
+		<div class="container px-0 mt-4 clearfix" id="fitbit">
 			<div class="fb_content">
 				<!-- Fitbit手环专区头部内容 -->
 				<div class="top_content float-left">
@@ -1209,12 +1196,95 @@
 				</div>
 			</div>
 		</div>
+		<!-- 相关产品视频展示 -->
+		<div class="container px-0 video_box mt-3">
+			<div class="box_head">
+				<h4 style="color: #666;" class="mb-0">视频</h4>
+				<img src="images/icon/video_icon.png">
+				<a href="#">
+					查看更多
+					<img src="images/icon/check_more_icon.png">
+				</a>
+			</div>
+			<div class="box_bd">
+				<ul class="list-unstyled mb-0 box_list float-left">
+					<li class="box_items float-left">
+						<a href="#">
+							<div>
+								<img src="images/product/huawei/huawei5/d5365324fd2ce18d32.png" alt="">
+								<span></span>
+							</div>
+							<h4>华为荣耀手环 5</h4>
+							<p>炫彩屏健康运动手环</p>
+						</a>
+					</li>
+					<li class="box_items float-left">
+						<a href="#">
+							<div>
+								<img src="images/product/huawei/huawei5/d5365324fd2ce18d32.png" alt="">
+								<span></span>
+							</div>
+							<h4>华为荣耀手环 5</h4>
+							<p>炫彩屏健康运动手环</p>
+						</a>
+					</li>
+					<li class="box_items float-left">
+						<a href="#">
+							<div>
+								<img src="images/product/huawei/huawei5/d5365324fd2ce18d32.png" alt="">
+								<span></span>
+							</div>
+							<h4>华为荣耀手环 5</h4>
+							<p>炫彩屏健康运动手环</p>
+						</a>
+					</li>
+					<li class="box_items float-left">
+						<a href="#">
+							<div>
+								<img src="images/product/huawei/huawei5/d5365324fd2ce18d32.png" alt="">
+								<span></span>
+							</div>
+							<h4>华为荣耀手环 5</h4>
+							<p>炫彩屏健康运动手环</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 首页侧边栏 -->
+		<div class="lift_nav">
+			<div class="nav_header">导航</div>
+			<a href="#rx">
+				<div>热销单品</div>
+			</a>
+			<a href="#jp">
+				<div>精品推荐</div>
+			</a>
+			<a href="#hw">
+				<div>华为专区</div>
+			</a>
+			<a href="#xm">
+				<div>小米专区</div>
+			</a>
+			<a href="#dido">
+				<div>dido专区</div>
+			</a>
+			<a href="#fitbit">
+				<div>Fitbit专区</div>
+			</a>
+			<a class="re_top" href="#">
+				<img src="images/icon/upArrow_icon.png">
+				<div>顶部</div>
+			</a>
+		</div>
 		<!-- 首页尾部 -->
 		 <footer>
 			<iframe src="footer.html" scrolling="no" frameborder="0" class="page_footer"></iframe>
 		</footer>
-		<script src="js/index.js"></script>
+		<!-- <script src="js/jquery-1.11.3.js"></script> -->
 		<script src="js/jquery.min.js"></script>
+		<script src="js/ScrollPic.js"></script>
+		<script src="js/index.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>

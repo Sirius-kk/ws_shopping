@@ -1,0 +1,130 @@
+#my_menu{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+} 
+/* .header{width: 100%;
+	/* height: 400px; */
+	/* z-index: 999; */
+}
+.outer_list{float: left;text-align: center;width: 100%;height: 40px;}
+.outer{float: left;width: 100%;height: 40px;}
+
+.inter{
+	width: 100%;
+	height: 400px;
+	border-top: 1px solid #999;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+}
+.inter_list,.inter_list1{
+	width: 1500px;
+	height: 300px;
+	margin: auto;
+	padding-top: 50px;
+}
+.inter_items{float: left;}
+ /* #my_menu:hover, #my_menu:focus {
+   color: #fff!important;
+   background-color: rgb(255,103,0);
+} */
+/*
+<div class="container-fluid page_nav">
+			<!-- 响应式导航栏 -->
+			<div class="navbar navbar-dark navbar-expand-lg p-0">
+				<!-- 全部商品菜单项,随着屏幕大小改变，永远显示 -->
+				<a class="navbar-brand" href="#">
+					全部商品
+					<img src="images/icon/order_icon.png">
+				</a>
+				<!-- 导航栏按钮，lg以下显示，lg以上隐藏 -->
+				<button data-toggle="collapse" data-target="#d1" class="navbar-toggler">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- 隐藏的菜单 -->
+				<div id="d1" class="collapse navbar-collapse justify-content-around">
+					<!-- 菜单项列表 -->
+					<ul class="navbar-nav text-center">
+						<!-- 华为专区菜单项 -->
+						<li class="nav-item">
+							<a id="my_menu" class="nav-link" href="#hw">华为手环专区</a>
+							<!-- 华为手环专区下拉菜单 -->
+							<ul class="list-unstyled inter">
+								<div class="inter_list">
+									<!-- 华为手环B6 -->
+									<li class="inter_items">
+										<a href="#">
+											<img src="./images/product/huawei/huawei%20B6/140fd0555a4b7f26.jpg">
+											<p class="title">HUAWEI手环 B6</p>
+											<p class="price">¥1499.00</p>
+										</a>
+									</li>
+									<!-- 华为手环 B5 -->
+									<li class="inter_items">
+										<a href="#">
+											<img src="./images/product/huawei/huawei%20B5/cca874f7de773cd0.png">
+											<p class="title">HUAWEI手环 B5</p>
+											<p class="price">¥1199.00</p>
+										</a>
+									</li>
+									<!-- 华为荣耀手环 5/NFC版 -->
+									<li class="inter_items">
+										<a href="#">
+											<img src="./images/product/huawei/huawei5/d5365324fd2ce18d.jpg">
+											<p class="title">荣耀手环 5/NFC版</p>
+											<p class="price">¥209.00</p>
+										</a>
+									</li>
+									<!-- 华为手环 4 -->
+									<li class="inter_items">
+										<a href="#">
+											<img src="./images/product/huawei/huawei4/0fdb5eddbc82f8cf.jpg">
+											<p class="title">HUAWEI手环 4</p>
+											<p class="price">¥199.00</p>
+										</a>
+									</li>
+									<!-- 华为手环 4Pro -->
+									<li class="inter_items">
+										<a href="#">
+											<img src="./images/product/huawei/huawei4%20Pro/3c614337b1a7e7b8.jpg">
+											<p class="title">HUAWEI手环 4Pro</p>
+											<p class="price">¥369.00</p>
+										</a>
+									</li>
+									<!-- 华为荣耀手环 5i/NFC版 -->
+									<li class="inter_items">
+										<a href="#">
+											<img src="./images/product/huawei/rongyao%205i&NFC/d75563e8794daae0.png">
+											<p class="title">荣耀手环 5i/NFC版</p>
+											<p class="price">¥159.00</p>
+										</a>
+									</li>
+									<!-- 华为荣耀手环 4Running版 -->
+									<li class="inter_items">
+										<a href="#">
+											<img src="./images/product/huawei/rongyao4%20Running/5b90d746N50d4fc97.jpg">
+											<p class="title">荣耀手环 4Running版</p>
+											<p class="price">¥89.00</p>
+										</a>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<!-- 小米专区菜单项 -->
+						<li class="nav-item">
+							<a class="nav-link" href="#xm">小米手环专区</a>
+						</li>
+						<!-- dido专区菜单项 -->
+						<li class="nav-item">
+							<a class="nav-link" href="#dido">dido手环专区</a>
+						</li>
+						<!-- Fitbit专区菜单项 -->
+						<li class="nav-item">
+							<a class="nav-link" href="#fitbit">Fitbit手环专区</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>

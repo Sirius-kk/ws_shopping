@@ -6,6 +6,8 @@ body{
 	font-family: "microsoft yahei";
 }
 
+.header_container>div{width: 1200px!important;}
+
 .logo_icon{width: 200px;}
 
 .form-control {
@@ -75,7 +77,8 @@ body{
 }
 
 /* 页面底部样式 */
-.slogan_container{
+.slogan_container>div{
+	width: 1200px;
 	font-size: 18px;
 }
 
