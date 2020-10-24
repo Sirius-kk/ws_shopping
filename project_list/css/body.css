@@ -1,0 +1,29 @@
+.breadcrumb-item + .breadcrumb-item::before{
+				content: ">";
+			}
+.fd1{
+	float:left;
+	
+}
+.mt1{
+	margin-top: -7.5px;
+}
+.d2::before{
+  display: table;
+  content: "";
+}
+body{background-color: #f5f5f5;}
+
+.yinying:hover{
+	box-shadow: 0 0 10px #666;
+	margin-top: -3px;
+	cursor: pointer;
+}
+.my_small{font-size: 12px;}
+.yinying{
+	transition: .3s;
+}
+.my_small2{font-size: 1s4px;}
+.d2 li>a:hover{
+	color: red !important;
+}
