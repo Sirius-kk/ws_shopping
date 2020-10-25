@@ -52,7 +52,7 @@ $("#login_1 .btn_1").click(function(){
         login_1用户手机号测试成功，点击“下一步”，则进入 录入信息的页面
 */
 // 1. 查找
-$(log1_inp).val(18020029511)
+$(log1_inp)
 .siblings(":last")
 // 2. 绑定
   // 单击事件
