@@ -69,8 +69,8 @@
       /* 变化后 */
       /* 变化后 */ }
       .fluid_body > .container .log_up .d-flex .num {
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 25px;
         margin: 0 auto;
         line-height: 20px;
         border: 2px solid #888;
@@ -82,16 +82,16 @@
         width: 101px;
         height: 24px;
         background: url(../../../public_img/user_img/reg-icon.png) 19px -33px; }
-      .fluid_body > .container .log_up .d-flex .num_change {
-        width: 24px;
-        height: 24px;
-        margin: 0 auto;
+      .fluid_body > .container .log_up .d-flex .num_chan {
         background: #33bb44;
         line-height: 20px;
-        border: 2px solid #888;
+        border: 2px solid #33bb44;
         border-radius: 50%;
         text-align: center;
         color: #fff; }
+      .fluid_body > .container .log_up .d-flex .num_change {
+        border-radius: 50%;
+        background: url(../../../public_img/user_img/reg-icon.png) 1px 1px; }
       .fluid_body > .container .log_up .d-flex .tip_change {
         color: #33bb44; }
       .fluid_body > .container .log_up .d-flex .arrow_change {
@@ -118,13 +118,13 @@
       font-weight: bold;
       color: #fff;
       background-color: #d2413e; }
-      .fluid_body > .container .log_down #login_1 .btn_2:hover, .fluid_body > .container .log_down #login_2 .btn_2:hover, .fluid_body > .container .log_down #login_3 .btn_2:hover {
-        background-color: #b10704; }
     .fluid_body > .container .log_down #login_1 .btn:hover, .fluid_body > .container .log_down #login_1 .form-control:hover, .fluid_body > .container .log_down #login_2 .btn:hover, .fluid_body > .container .log_down #login_2 .form-control:hover, .fluid_body > .container .log_down #login_3 .btn:hover, .fluid_body > .container .log_down #login_3 .form-control:hover {
       border-color: #80bdff; }
+    .fluid_body > .container .log_down #login_1 .green_bor, .fluid_body > .container .log_down #login_2 .green_bor, .fluid_body > .container .log_down #login_3 .green_bor {
+      border: 1px solid #32da40; }
+    .fluid_body > .container .log_down #login_1 .red_bor, .fluid_body > .container .log_down #login_2 .red_bor, .fluid_body > .container .log_down #login_3 .red_bor {
+      border: 1px solid #da4c2c; }
   .fluid_body > .container .log_down #login_1 {
-    display: none;
-    /* 部分一，隐藏 */
     margin-top: 60px;
     position: relative; }
     .fluid_body > .container .log_down #login_1 button:first-child {
@@ -138,12 +138,13 @@
     .fluid_body > .container .log_down #login_1 .dropdown-toggle {
       width: 118px; }
     .fluid_body > .container .log_down #login_1 .btn_1 {
-      margin-top: 50px; }
-    .fluid_body > .container .log_down #login_1 .btn_11:hover {
-      margin-top: 50px;
-      background-color: #ccc; }
+      margin-top: 60px; }
+      .fluid_body > .container .log_down #login_1 .btn_1:hover {
+        background-color: #ccc; }
+    .fluid_body > .container .log_down #login_1 .btn_22:hover {
+      background-color: #b10704; }
     .fluid_body > .container .log_down #login_1 span {
-      width: 80px;
+      width: 90px;
       height: 25px;
       position: absolute;
       top: 15px;
@@ -152,23 +153,60 @@
       line-height: 25px;
       display: none; }
       .fluid_body > .container .log_down #login_1 span.pho_err {
-        background: #fff url(../../../public_img/user_img/error.png) no-repeat 55px -0.5px;
+        background: #fff url(../../../public_img/user_img/error.png) no-repeat 64px -0.5px;
         color: #d85a49;
         display: inline-block; }
       .fluid_body > .container .log_down #login_1 span.pho_cor {
-        background: #fff url(../../../public_img/user_img/correct.png) no-repeat 55px -0.5px;
+        background: #fff url(../../../public_img/user_img/correct.png) no-repeat 64px -0.5px;
         color: #5fbc5a;
         display: inline-block; }
   .fluid_body > .container .log_down #login_2 {
     display: none;
-    margin-top: 60px; }
+    margin-top: 60px;
+    position: relative; }
     .fluid_body > .container .log_down #login_2 .form-control {
       width: 470px; }
       .fluid_body > .container .log_down #login_2 .form-control ~ .form-control {
-        margin-top: 30px; }
+        margin-top: 25px; }
+      .fluid_body > .container .log_down #login_2 .form-control.log2_err {
+        background: #fff url(../../../public_img/user_img/log_err.png) no-repeat 425px 15px;
+        display: inline-block; }
+      .fluid_body > .container .log_down #login_2 .form-control.log2_cor {
+        background: #fff url(../../../public_img/user_img/log_cor.png) no-repeat 425px 17px;
+        display: inline-block; }
     .fluid_body > .container .log_down #login_2 .btn {
-      margin-top: 35px; }
+      margin-top: 30px; }
+    .fluid_body > .container .log_down #login_2 span {
+      padding-left: 26px;
+      display: block;
+      background: url(../../../public_img/user_img/care1.png) no-repeat 0 3px;
+      position: absolute;
+      color: #666;
+      font-family: "Segoe UI Emoji";
+      display: none; }
+      .fluid_body > .container .log_down #login_2 span.sp_err {
+        background: url(../../../public_img/user_img/care2.png) no-repeat 0 3px; }
+    .fluid_body > .container .log_down #login_2 b {
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      right: 50px;
+      display: block;
+      z-index: 5; }
+      .fluid_body > .container .log_down #login_2 b:nth-child(8) {
+        background: url(../../../public_img/user_img/nolook.png) no-repeat 1px 1px;
+        top: 95px; }
+      .fluid_body > .container .log_down #login_2 b:last-child {
+        background: url(../../../public_img/user_img/nolook.png) no-repeat 1px 1px;
+        bottom: 100px; }
+      .fluid_body > .container .log_down #login_2 b.look1 {
+        background: url(../../../public_img/user_img/look.png) no-repeat 1px 4px;
+        top: 95px; }
+      .fluid_body > .container .log_down #login_2 b.look2 {
+        background: url(../../../public_img/user_img/look.png) no-repeat 1px 4px;
+        bottom: 100px; }
   .fluid_body > .container .log_down #login_3 {
+    display: none;
     text-align: center; }
     .fluid_body > .container .log_down #login_3 span {
       display: block;

@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>reg_boot</title>
+		<title>reg</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/reg.css"/>
@@ -22,7 +22,7 @@
 				<div class="log_up"><!-- 注册上半部 -->
 					<div class="d-flex justify-content-between">
 						<div>
-							<div class="num_change">1 </div>
+							<div class="num num_chan">1</div>
 							<p class="tip_change">验证手机</p>
 						</div>
 						<div class="arrow"></div>
@@ -50,25 +50,26 @@
 							<input class="form-control d-inline-block" maxlength="11" placeholder="请输入手机号">
 							<span>格式正确</span>
 							<span>格式有误</span>
-							<button disabled class="btn btn_1">点击按钮进行验证</button>
-							<button class="btn btn_2">下一步</button>
+							<button class="btn btn_1">点击按钮进行验证</button>
+							<button disabled class="btn btn_2">下一步</button>
 						</div>
 					</div>
 					<div id="login_2"><!-- 注册下半部2 -->
-						<div>
-							<div>
-								<input class="form-control d-inline-block" maxlength="11" type="text" placeholder="用户名">
-								<input class="form-control d-inline-block" maxlength="11" type="text" placeholder="密码">
-								<input class="form-control d-inline-block" maxlength="11" type="text" placeholder="确认密码">
-							</div>
-							<button class="btn btn_2">提交信息</button>
-						</div>
+						<input class="form-control d-inline-block" maxlength="10" type="text" name="uname" placeholder="用户名">
+						<span>支持英文、数字、“_”的组合,4-10个字符</span>
+						<input class="form-control d-inline-block" maxlength="16" type="password" name="password" placeholder="密码">
+						<span>建议使用字母、数字、"_"、"$"两种及以上组合,8-16个字符</span>
+						<input class="form-control d-inline-block" maxlength="16" type="password" placeholder="确认密码">
+						<span>再次输入密码</span>
+						<button class="btn btn_2">提交信息</button>
+						<b></b>
+						<b></b>
 					</div>
 					<div id="login_3"><!-- 注册下半部3 -->
 						<span>注册成功！</span>
 						<a href="">继续完善信息</a>
-						<a href="">马上进入主页</a>
-						<a href="">8秒后自动登录，并进入主页</a>
+						<a href="">立即登录</a>
+						<a href="">8秒后进入登录页面</a>
 					</div>
 				</div>
 			</div>
@@ -76,10 +77,10 @@
 		<div class="container-fluid fluid_hf">
 			<div class="foot">
 				<ul class="footer breadcrumb">
-					<li class="breadcrumb-item"><a href="#">沃斯帐号与云空间用户协议</a></li>
-					<li class="breadcrumb-item"><a href="#">关于沃斯帐号与云空间隐私的声明</a></li>
-					<li class="breadcrumb-item"><a href="#">常见问题</a></li>
-					<li class="breadcrumb-item"><a href="#">Cookies</a></li>
+					<li class="breadcrumb-item"><a href="javascript:;">沃斯帐号与云空间用户协议</a></li>
+					<li class="breadcrumb-item"><a href="javascript:;">关于沃斯帐号与云空间隐私的声明</a></li>
+					<li class="breadcrumb-item"><a href="javascript:;">常见问题</a></li>
+					<li class="breadcrumb-item"><a href="javascript:;">Cookies</a></li>
 				</ul>
 				<p>沃斯帐号 版权所有 © 2020-2020</p>
 			</div>

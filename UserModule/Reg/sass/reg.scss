@@ -78,7 +78,7 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 		.d-flex{
 			margin-top: 80px;
 			.num{
-				width: 24px;height: 24px;
+				width: 26px;height: 25px;
 				margin: 0 auto;
 				line-height: 20px;
 				border: 2px solid #888;
@@ -93,15 +93,17 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 				background: url(../../../public_img/user_img/reg-icon.png) 19px -33px;
 			}
 			/* 变化后 */
-			.num_change{
-				width: 24px;height: 24px;
-				margin: 0 auto;
+			.num_chan{
 				background: #33bb44;
 				line-height: 20px;
-				border: 2px solid #888;
+				border: 2px solid #33bb44;
 				border-radius: 50%;
 				text-align: center;
 				color: #fff ;
+			}
+			.num_change{
+				border-radius: 50%;
+				background:  url(../../../public_img/user_img/reg-icon.png) 1px 1px;
 			}
 			/* 变化后 */
 			.tip_change{
@@ -137,16 +139,22 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 				font-weight: bold;
 				color: #fff;
 				background-color: #d2413e;
-				&:hover{
-					background-color: #b10704;
-				}
+				// &:hover{
+				// 	background-color: #b10704;
+				// }
 			}
 			.btn:hover,.form-control:hover{
 				border-color: #80bdff;
 			}
+			.green_bor{
+				border: 1px solid #32da40;
+			}
+			.red_bor{
+				border: 1px solid #da4c2c;
+			}
 		}
 		#login_1{
-			display: none;/* 部分一，隐藏 */
+			// display: none;/* 部分一，隐藏 */
 			margin-top: 60px;
 			position: relative;
 			button:first-child{
@@ -163,14 +171,16 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 				width: 118px;
 			}
 			.btn_1{
-				margin-top: 50px;
+				margin-top: 60px;
+				&:hover{
+					background-color: #ccc;
+				}
 			}
-			.btn_11:hover{
-				margin-top: 50px;
-				background-color: #ccc;
+			.btn_22:hover{
+				background-color: #b10704;
 			}
 			span{
-				width: 80px;
+				width: 90px;
 				height: 25px;
 				position: absolute;
 				top: 15px;
@@ -179,12 +189,12 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 				line-height: 25px;
 				display: none;
 				&.pho_err{
-					background: #fff url(../../../public_img/user_img/error.png) no-repeat 55px -.5px;
+					background: #fff url(../../../public_img/user_img/error.png) no-repeat 64px -.5px;
 					color:#d85a49;
 					display: inline-block;
 				}
 				&.pho_cor{
-					background: #fff url(../../../public_img/user_img/correct.png) no-repeat 55px -.5px;
+					background: #fff url(../../../public_img/user_img/correct.png) no-repeat 64px -.5px;
 					color: #5fbc5a;
 					display: inline-block;
 				}
@@ -193,18 +203,63 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 		#login_2{
 			display: none;	
 			margin-top: 60px;
+			position: relative;
 			.form-control{
 				width: 470px;
 				&~.form-control{
-					margin-top: 30px;
+					margin-top: 25px;
+				}
+				&.log2_err{
+					background: #fff url(../../../public_img/user_img/log_err.png) no-repeat 425px 15px;
+					display: inline-block;
+				}
+				&.log2_cor{
+					background: #fff url(../../../public_img/user_img/log_cor.png) no-repeat 425px 17px;
+					display: inline-block;
 				}
 			}
 			.btn{
-				margin-top: 35px;
+				margin-top: 30px;
+			}
+			span{
+				padding-left: 26px;
+				display: block;
+				background: url(../../../public_img/user_img/care1.png) no-repeat 0 3px;
+				position: absolute;
+				color: #666;
+				font-family: "Segoe UI Emoji";
+				display: none;
+				&.sp_err{
+					background: url(../../../public_img/user_img/care2.png) no-repeat 0 3px;
+				}
+			}
+			b{
+				height: 25px;
+				width: 25px;
+				position: absolute;
+				right: 50px;
+				display: block;
+				z-index: 5;
+				&:nth-child(8){
+					background: url(../../../public_img/user_img/nolook.png) no-repeat 1px 1px;
+					top: 95px;
+				}
+				&:last-child{
+					background: url(../../../public_img/user_img/nolook.png) no-repeat 1px 1px;
+					bottom: 100px;
+				}
+				&.look1{
+					background: url(../../../public_img/user_img/look.png) no-repeat 1px 4px;
+					top: 95px;
+				}
+				&.look2{
+					background: url(../../../public_img/user_img/look.png) no-repeat 1px 4px;
+					bottom: 100px;
+				}
 			}
 		}
 		#login_3{
-			// display: none;
+			display: none;
 			
 			text-align: center;
 			span{

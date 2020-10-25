@@ -17,36 +17,59 @@
 		</div>
 		<div class="container-fluid fluid_body no-gutters">
 			<div class="warnning">
-				<p><span></span>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="#">《沃斯隐私政策》</a>已上线，将更有利于保护您的个人隐私。
+				<p><span></span>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="javascript:;">《沃斯隐私政策》</a>已上线，将更有利于保护您的个人隐私。
 				</p>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="reg_body offset-lg-7 col-lg-4 justify-content-center"><!-- 目标区域 -->
 						<ul class="body_account_header breadcrumb flex-nowrap d-flex justify-content-center"><!-- 两个登陆选择 -->
-							<li class="breadcrumb-item"><a href="#" onclick="code()">扫码登陆</a></li>
-							<li class="breadcrumb-item"><a href="#" onclick="account()">账号登陆</a></li>
+							<li class="breadcrumb-item"><a href="javascript:;" onclick="code()">扫码登陆</a></li>
+							<li class="breadcrumb-item"><a href="javascript:;" onclick="account()">账号登陆</a></li>
 						</ul>
 						<div class="body_play text-center">
-							<div class="account_reg"><!-- 账号登陆 -->
-								<div class="body_account_input"><!-- 用户名和密码输入框 -->
+							<!-- 账号登陆 -->
+							<div class="account_reg">
+								<!-- 用户名和密码输入框 -->
+								<div class="body_account_input">
+									<form action="/toLogin" method="post">
+										<input name="username" placeholder="手机号/邮箱" type="text" class="input_t form-control">
+										<input name="password" placeholder="密码" type="text" class="input_b form-control">
+										<a class="mt-4 d-block text-lg-left text-sm-center" href="javascript:;">短信验证码登陆</a>
+										<div>
+											<button type="submit" class="btn btn-info">登陆</button>
+										</div>
+									</form>
+									<!-- <input placeholder="用户名/邮箱/手机号" type="text" class="input_t form-control">
+									<input placeholder="密码" type="text" class="input_b form-control">
+									<a class="mt-4 d-block text-lg-left text-sm-center" href="javascript:;">短信验证码登陆</a> -->
+								</div>
+								<!-- 登录按钮 -->
+								<!-- <div>
+									<button type="button" class="btn btn-info">登陆</button>
+								</div> -->
+							</div>
+							<!-- 账号登陆 -->
+							<!-- <div class="account_reg"> -->
+								<!-- 用户名和密码输入框 -->
+								<!-- <div class="body_account_input">
 									<input placeholder="用户名/邮箱/手机号" type="text" class="input_t form-control">
 									<input placeholder="密码" type="text" class="input_b form-control">
-									<a class="mt-4 d-block text-lg-left text-sm-center" href="#">短信验证码登陆</a>
-								</div>
-								<div><!-- 登录按钮 -->
+									<a class="mt-4 d-block text-lg-left text-sm-center" href="javascript:;">短信验证码登陆</a>
+								</div> -->
+								<!-- 登录按钮 -->
+								<!-- <div>
 									<button type="button" class="btn btn-info">登陆</button>
 								</div>
-							</div>
+							</div> -->
 							<div class="code_reg"><!-- 扫码登陆 -->
 								<div class="code_1">
-									<!-- <img class="ewm" src="../../public_img/user_img/erweima.gif" > -->
 									<img src="../../public_img/user_img/erweima.gif" >
 									<img class="phone" src="../../public_img/user_img/phonesaoma.png" >
 								</div>
 								<div class="code_2">
 									<div>
-										打开<a href="#">手机沃斯 </a> 扫描二维码
+										打开<a href="javascript:;">手机沃斯 </a> 扫描二维码
 									</div>
 									<ul>
 										<li>
@@ -86,10 +109,10 @@
 		<div class="container-fluid fluid_hf">
 			<div class="foot">
 				<ul class="footer breadcrumb">
-					<li class="breadcrumb-item"><a href="#">沃斯帐号与云空间用户协议</a></li>
-					<li class="breadcrumb-item"><a href="#">关于沃斯帐号与云空间隐私的声明</a></li>
-					<li class="breadcrumb-item"><a href="#">常见问题</a></li>
-					<li class="breadcrumb-item"><a href="#">Cookies</a></li>
+					<li class="breadcrumb-item"><a href="javascript:;">沃斯帐号与云空间用户协议</a></li>
+					<li class="breadcrumb-item"><a href="javascript:;">关于沃斯帐号与云空间隐私的声明</a></li>
+					<li class="breadcrumb-item"><a href="javascript:;">常见问题</a></li>
+					<li class="breadcrumb-item"><a href="javascript:;">Cookies</a></li>
 				</ul>
 				<p>沃斯帐号 版权所有 © 2020-2020</p>
 			</div>
