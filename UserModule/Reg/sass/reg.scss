@@ -211,11 +211,13 @@ $font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 				}
 				&.log2_err{
 					background: #fff url(../../../public_img/user_img/log_err.png) no-repeat 425px 15px;
-					display: inline-block;
+					// display: inline-block;
+					border: 1px solid #da4c2c;
 				}
 				&.log2_cor{
-					background: #fff url(../../../public_img/user_img/log_cor.png) no-repeat 425px 17px;
-					display: inline-block;
+					background: #fff url(../../../public_img/user_img/log_cor.png) no-repeat 410px 17px;
+					// display: inline-block;
+					border: 1px solid #32da40;
 				}
 			}
 			.btn{

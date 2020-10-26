@@ -170,10 +170,10 @@
         margin-top: 25px; }
       .fluid_body > .container .log_down #login_2 .form-control.log2_err {
         background: #fff url(../../../public_img/user_img/log_err.png) no-repeat 425px 15px;
-        display: inline-block; }
+        border: 1px solid #da4c2c; }
       .fluid_body > .container .log_down #login_2 .form-control.log2_cor {
-        background: #fff url(../../../public_img/user_img/log_cor.png) no-repeat 425px 17px;
-        display: inline-block; }
+        background: #fff url(../../../public_img/user_img/log_cor.png) no-repeat 410px 17px;
+        border: 1px solid #32da40; }
     .fluid_body > .container .log_down #login_2 .btn {
       margin-top: 30px; }
     .fluid_body > .container .log_down #login_2 span {
