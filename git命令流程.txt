@@ -1,0 +1,10 @@
+1.
+       *git init
+	git add .	
+        git status
+	git commit -m 王艺霖的第一次
+       *git branch hhy
+       *git checkout hhy
+       *git remote add origin https://github.com/hhy0811/2007-1.git
+	git push -u origin hhy
+	
