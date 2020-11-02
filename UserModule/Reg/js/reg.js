@@ -125,9 +125,9 @@ $("#login_2 input")
       // 去掉类名log2_err
       .removeClass("log2_err")
       // 加绿色边框
-      // .addClass("green_bor")
+      .addClass("green_bor")
       // 清除红边框
-      // .removeClass("red_bor")
+      .removeClass("red_bor")
       // span隐藏
       .next()
       .css("display","none")
@@ -145,13 +145,13 @@ $("#login_2 input")
       // input添加类名log2_err(末尾加红叉)
       .addClass("log2_err")
       // 清除绿色边框
-      // .removeClass("green_bor")
+      .removeClass("green_bor")
       // 加红边框
-      // .addClass("red_bor")
+      .addClass("red_bor")
       // 清除绿边框
-      // .removeClass("green_bor")
+      .removeClass("green_bor")
       // 加红色色边框
-      // .addClass("red_bor")
+      .addClass("red_bor")
       // 则把span换成红色背景图标
       .next()
       .addClass("sp_err");

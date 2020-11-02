@@ -45,6 +45,7 @@
   height: 613px; }
 
 .fluid_body {
+  height: calc(100% - 280px);
   padding: 0 !important;
   background: #ECE9E6;
   /* fallback for old browsers */
