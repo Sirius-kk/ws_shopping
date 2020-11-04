@@ -5,9 +5,15 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="../css/bootstrap.css">
 		<link rel="stylesheet" href="../css/body.css">
+		<script src="../js/vue.js"></script>
 		<script src="../js/jquery.min.js"></script>
 		<script src="../js/popper.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
+		<style>
+			.qwer{
+				color:red !important;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -22,12 +28,10 @@
 				<div class="d2 pt-1" >
 					<span class="fd1 mr-5">分类：</span>
 					<ul class="nav ml-5 mt1" >
-						<li class="nav-item"><a class="nav-link text-muted" href="#">智能手表</a></li>
-						<li class="nav-item"><a class="nav-link text-muted" href="#">儿童手表</a></li>
-						<li class="nav-item"><a class="nav-link text-muted" href="#">智能手环</a></li>
-						<li class="nav-item"><a class="nav-link text-muted" href="#">智能体脂秤</a></li>
-						<li class="nav-item"><a class="nav-link text-muted" href="#">VR</a></li>
-						<li class="nav-item"><a class="nav-link text-muted" href="#">充电器/线材</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#" @click="s1" :class="{qwer:s==1}">华为</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#" @click="s2" :class="{qwer:s==2}">小米</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#" @click="s3" :class="{qwer:s==3}">VIVO</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#" @click="s4" :class="{qwer:s==4}">OPPO</a></li>
 					</ul>
 				</div>
 				<div class="d2 border-top pt-2">
@@ -50,11 +54,11 @@
 				</div>
 			</div>
 			<!-- 图片详情页 第一行 -->
-			<div class="row no-gutters mb-2 mt-3">
+			<div class="row no-gutters mb-2 mt-3" v-if="s==1">
 				<div class="col ">
 					<div class="flex-column d-flex bg-white yinying">
 						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
-						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="m-3 my_small2">HUAWEI WATCH第一个保时捷设计款 钛金灰（46mm）华为智能手表 </p>
 						<p class="text-danger ml-3">暂无报价</p>
 						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
 						<p class="text-muted ml-3 my_small">暂无评价</p>
@@ -98,11 +102,107 @@
 				</div>
 			</div>
 			<!-- 第二行 -->
-			<div class="row no-gutters mb-2 mt-3">
+			<div class="row no-gutters mb-2 mt-3" v-else-if="s==2">
 				<div class="col ">
 					<div class="flex-column d-flex bg-white yinying">
 						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH第二个 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+				<div class="col pl-2">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
 						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+				<div class="col pl-2">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+				<div class="col pl-2">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+				<div class="col pl-2">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+			</div>
+			<!-- 3 -->
+			<div class="row no-gutters mb-2 mt-3" v-else-if="s==3">
+				<div class="col ">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH第三个 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+				<div class="col pl-2">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+				<div class="col pl-2">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+				<div class="col pl-2">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+				<div class="col pl-2">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">HUAWEI WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
+						<p class="text-danger ml-3">暂无报价</p>
+						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
+						<p class="text-muted ml-3 my_small">暂无评价</p>
+					</div>
+				</div>
+			</div>
+			<!-- 44444 -->
+			<div class="row no-gutters mb-2 mt-3" v-else>
+				<div class="col ">
+					<div class="flex-column d-flex bg-white yinying">
+						<div class="text-center pt-3"><a href=""><img class="w-75 " src="../Pro_list_img/1.png" ></a></div>
+						<p class="m-3 my_small2">第四个 WATCH GT 2 保时捷设计款 钛金灰（46mm）华为智能手表 </p>
 						<p class="text-danger ml-3">暂无报价</p>
 						<p class="text-danger border border-danger border-3 w-25 my_small ml-3">赠送积分</p>
 						<p class="text-muted ml-3 my_small">暂无评价</p>
@@ -146,6 +246,29 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			new Vue({
+				el: ".container",
+				data: {
+					s:"1",
+				},
+				methods: {
+					s1() {
+						this.s=1;
+					},
+					s2() {
+						this.s=2;
+					},
+				    s3() {
+						this.s=3;
+					},
+					s4() {
+						this.s=4;
+					},
+					
+				}
+			})
+		</script>
 		
 	</body>
 </html>
